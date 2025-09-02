@@ -144,127 +144,77 @@ nav {
   }
 }
 
-/* --------------- About Section ------------------- */
-.about-header {
-  background: #eaf4fb;
-  border-bottom: 1px solid #ddd;
-  overflow: hidden;
-  height: 400px;
-}
-
-.about-title {
-  font-size: 3.5rem;
-  font-weight: 700;
-  color: #3d7dd6;
-  padding-bottom: 80px;
-  padding-left: 100px;
-}
-#text-home:hover {
-  text-decoration: underline;
-}
-.breadcrumb {
-  background: transparent;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  gap: 10px;
-  margin-bottom: 20px;
-  padding-left: 30px;
-}
-ul {
-  list-style-type: none;
-}
-
-/* Image Wrapper */
-.about-image-wrapper {
+/* ---------------------- Hero Section --------------------------- */
+.hero-section {
   position: relative;
-  display: inline-block;
-  top: 70px;
-  z-index: 2;
+  height: 100vh;
+  overflow: hidden;
 }
 
-.about-image {
-  border-radius: 50%;
-  border: 1px solid #9b9b9b;
-  width: 500px;
-  height: 500px;
-  object-fit: cover;
-  padding: 20px;
-}
-
-/* Rotating Segment */
-.rotating-segment {
-  position: absolute;
-  top: 50%;
-  left: 50%;
+/* Default First Image */
+.hero-one {
+  background: url("/assets/images/hero-image1.png") no-repeat center
+    center/cover;
+  height: 100vh;
   width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-  animation: rotateSegment 10s linear infinite;
-  pointer-events: none;
-}
-
-.rotating-segment span {
   position: absolute;
   top: 0;
-  left: 50%;
-  width: 40px;
-  height: 5px;
-  background: #e91e63;
-  border-radius: 5px;
-  transform: translateX(-50%);
-}
-
-@keyframes rotateSegment {
-  0% {
-    transform: translate(-50%, -50%) rotate(0deg);
-  }
-  100% {
-    transform: translate(-50%, -50%) rotate(360deg);
-  }
-}
-.about-hero-section {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-/* Decorative Striped Circles */
-.striped-circle {
-  position: absolute;
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
-  background: repeating-linear-gradient(
-    45deg,
-    #007bff33,
-    #007bff33 10px,
-    transparent 10px,
-    transparent 20px
-  );
-  opacity: 0.5;
-}
-
-.left-circle {
-  /* bottom: -40px; */
-  left: 0px;
-  top: 240px;
-}
-
-.right-circle {
-  top: -40px;
-  right: -50px;
-  z-index: -1;
-  width: 250px;
-}
-
-/* Subtitle */
-.about-subtitle {
-  font-size: 2.25rem;
-  font-weight: 600;
-  color: #1d3557;
+  left: 0;
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
   display: flex;
   justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  font-weight: bold;
+  color: darkslategrey;
+}
+
+/* Second Image (hidden by default) */
+.hero-two {
+  background: url("/assets/images/hero-image2.png") no-repeat center
+    center/cover;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  display: flex;
+  align-items: end;
+}
+
+/* Hover effect */
+.hero-section:hover .hero-one {
+  opacity: 0;
+}
+
+.hero-section:hover .hero-two {
+  opacity: 1;
+}
+
+.hero-para {
+  font-size: smaller;
+}
+
+.text-container {
+  width: 700px;
+  margin: 0px 0px 80px 50px;
+}
+
+.hero-video {
+  width: 300px;
+  border-radius: 10px;
+  margin: 0px 0px 80px 50px;
+}
+.text-slace {
+  border-left: 7px solid deeppink;
+  padding-right: 5px;
+}
+.text-title {
+  font-size: x-large;
+  font-weight: 900;
 }
 
 /* ---------------- INVESTING IN INDIA section ------------  */

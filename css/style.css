@@ -138,80 +138,105 @@ nav {
   }
 }
 
-/* Hero Section */
+/* ---------------------- Hero Section --------------------------- */
 .hero-section {
-  position: relative;
+  background: url("/assets/images/hero-image.avif")
+    no-repeat center center/cover;
   height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  position: relative;
   overflow: hidden;
 }
 
-/* Default First Image */
-.hero-one {
-  background: url("/assets/images/hero-image1.png") no-repeat center
-    center/cover;
-  height: 100vh;
-  width: 100%;
+.hero-overlay {
   position: absolute;
   top: 0;
   left: 0;
-  opacity: 1;
-  transition: opacity 1s ease-in-out;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 5rem;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  animation: slideUp 1.5s ease-out;
+}
+
+/* INFO CARDS */
+.info-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  border-radius: 15px;
+  padding: 20px;
+  margin: 10px;
+  color: white;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.info-card h5 {
   font-weight: bold;
-  color: darkslategrey;
 }
 
-/* Second Image (hidden by default) */
-.hero-two {
-  background: url("/assets/images/hero-image2.png") no-repeat center
-    center/cover;
-  height: 100vh;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-  display: flex;
-  align-items: end;
+.info-icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  display: inline-block;
+  transform: scale(0.8);
+  transition: transform 0.4s ease;
 }
 
-/* Hover effect */
-.hero-section:hover .hero-one {
-  opacity: 0;
+.info-card:hover .info-icon {
+  transform: scale(1.2) rotate(10deg);
 }
 
-.hero-section:hover .hero-two {
-  opacity: 1;
+/* BUTTON */
+.know-more-btn {
+  margin-top: 20px;
+  border-radius: 30px;
+  padding: 12px 30px;
+  font-weight: bold;
+  transition: all 0.3s ease;
 }
 
-.hero-para {
-  font-size: smaller;
+.know-more-btn:hover {
+  background: #ff6b6b;
+  transform: scale(1.1);
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3);
 }
 
-.text-container {
-  width: 700px;
-  margin: 0px 0px 80px 50px;
+/* ANIMATIONS */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.hero-video {
-  width: 300px;
-  border-radius: 10px;
-  margin: 0px 0px 80px 50px;
-}
-.text-slace {
-  border-left: 7px solid deeppink;
-  padding-right: 5px;
-}
-.text-title {
-  font-size: x-large;
-  font-weight: 900;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-/* Investible Sectors */
+/* ---------------- Investible Sectors ------------------------ */
 
 .section-title {
   font-weight: bold;

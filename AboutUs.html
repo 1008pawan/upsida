@@ -88,42 +88,39 @@
       </div>
     </header>
 
-    <!-- About Us Section -->
-    <section class="about-header py-5">
-      <div class="container-fluid">
-        <div class="row align-items-center about-hero-section">
-          <!-- Left Content -->
-          <div class="col-lg-6 mb-4 mb-lg-0">
-            <h2 class="about-title mb-5">ABOUT US</h2>
-            <nav aria-label="breadcrumb" id="about-section">
-              <ul class="breadcrumb">
-                <div class="striped-circle left-circle"></div>
-                <div class="breadcrumb breadcrumb-item" id="breadcrum">
-                  <li>
-                    <a href="/index.html" id="text-home">Home</a>
-                  </li>
-                  <div>></div>
-                  <li class="active" aria-current="page">About Us</li>
-                </div>
-              </ul>
-            </nav>
-          </div>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <!-- First image with text -->
+      <div class="hero-one">INDIA OPPORTUNITY</div>
 
-          <!-- Right Image with Shapes -->
-          <div class="col-lg-6 text-center position-relative">
-            <div class="about-image-wrapper">
-              <img
-                src="/assets/images/icon-img/photo-1505761671935-60b3a7427bad.jfif"
-                class="about-image"
-                alt="About Us"
-              />
-              <div class="striped-circle right-circle"></div>
-              <!-- Rotating Segment -->
-              <div class="rotating-segment">
-                <span></span>
-              </div>
-            </div>
-          </div>
+      <!-- Second image -->
+      <div class="hero-two">
+        <div class="text-container">
+          <h1 class="text-title">
+            <span class="text-slace"></span>INDIA OPPORTUNITY
+            _________________________
+          </h1>
+          <p class="hero-para">
+            India's ongoing evolution spans numerous sectors, each contributing
+            to its impressive growth trajectory. Through ambitious initiatives
+            and strategic investments, India is fostering innovation,
+            efficiency, and sustainability, positioning itself as a global
+            player. Embracing digitalisation and modernisation, the nation is
+            driving inclusive growth, job creation, and improved living
+            standards. This comprehensive transformation reflects India's
+            resilience, adaptability, and steadfast dedication to forging a
+            prosperous and progressive future for all its people.
+          </p>
+        </div>
+        <div>
+          <video
+            src="/assets/videos/FINAL Video.mp4"
+            autoplay
+            muted
+            loop
+            controls
+            class="hero-video"
+          ></video>
         </div>
       </div>
     </section>
@@ -372,66 +369,69 @@
     </section>
 
     <!-- Bootstrap icons -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
 
-  <script>
-    // Data for initiatives
-    const initiatives = {
-      dpiit: {
-        title: "DPIIT",
-        text: "Department for Promotion of Industry and Internal Trade (DPIIT) is responsible for formulation and implementation of promotional measures for industrial development.",
-        img: "https://www.startupindia.gov.in/content/dam/invest-india/newhomepage/logo/dpiit-logo.svg"
-      },
-      nsws: {
-        title: "NSWS",
-        text: "National Single Window System (NSWS) provides a one-stop shop for investors to get approvals and clearances.",
-        img: "https://www.nsws.gov.in/sites/default/files/nswsLogo.png"
-      },
-      invest: {
-        title: "INVEST INDIA",
-        text: "Invest India is the National Investment Promotion and Facilitation Agency of India, promoting and facilitating investments.",
-        img: "https://www.investindia.gov.in/themes/investindia/logo.svg"
-      },
-      odop: {
-        title: "ODOP",
-        text: "The One District One Product (ODOP) initiative aims to promote the district as a hub of a particular product in India.",
-        img: "https://www.odopindia.com/assets/img/logo.png"
-      }
-    };
+    <script>
+      // Data for initiatives
+      const initiatives = {
+        dpiit: {
+          title: "DPIIT",
+          text: "Department for Promotion of Industry and Internal Trade (DPIIT) is responsible for formulation and implementation of promotional measures for industrial development.",
+          img: "https://www.startupindia.gov.in/content/dam/invest-india/newhomepage/logo/dpiit-logo.svg",
+        },
+        nsws: {
+          title: "NSWS",
+          text: "National Single Window System (NSWS) provides a one-stop shop for investors to get approvals and clearances.",
+          img: "https://www.nsws.gov.in/sites/default/files/nswsLogo.png",
+        },
+        invest: {
+          title: "INVEST INDIA",
+          text: "Invest India is the National Investment Promotion and Facilitation Agency of India, promoting and facilitating investments.",
+          img: "https://www.investindia.gov.in/themes/investindia/logo.svg",
+        },
+        odop: {
+          title: "ODOP",
+          text: "The One District One Product (ODOP) initiative aims to promote the district as a hub of a particular product in India.",
+          img: "https://www.odopindia.com/assets/img/logo.png",
+        },
+      };
 
-    // Elements
-    const logo = document.getElementById("initiative-logo");
-    const title = document.getElementById("initiative-title");
-    const text = document.getElementById("initiative-text");
+      // Elements
+      const logo = document.getElementById("initiative-logo");
+      const title = document.getElementById("initiative-title");
+      const text = document.getElementById("initiative-text");
 
-    // Event listener for partner logos
-    document.querySelectorAll(".partners img").forEach(img => {
-      img.addEventListener("click", () => {
-        const id = img.getAttribute("data-id");
-        const data = initiatives[id];
+      // Event listener for partner logos
+      document.querySelectorAll(".partners img").forEach((img) => {
+        img.addEventListener("click", () => {
+          const id = img.getAttribute("data-id");
+          const data = initiatives[id];
 
-        // Update card content
-        logo.src = data.img;
-        title.textContent = data.title;
-        text.textContent = data.text;
+          // Update card content
+          logo.src = data.img;
+          title.textContent = data.title;
+          text.textContent = data.text;
+        });
       });
-    });
 
-  const partnersWrapper = document.querySelector(".partners");
-  const arrowBtns = document.querySelectorAll(".arrow-btn");
+      const partnersWrapper = document.querySelector(".partners");
+      const arrowBtns = document.querySelectorAll(".arrow-btn");
 
-  // Right arrow → move first logo to the end
-  arrowBtns[1].addEventListener("click", () => {
-    const firstLogo = partnersWrapper.querySelector(".partners-logo");
-    partnersWrapper.appendChild(firstLogo); // move to end
-  });
+      // Right arrow → move first logo to the end
+      arrowBtns[1].addEventListener("click", () => {
+        const firstLogo = partnersWrapper.querySelector(".partners-logo");
+        partnersWrapper.appendChild(firstLogo); // move to end
+      });
 
-  // Left arrow → move last logo to the beginning
-  arrowBtns[0].addEventListener("click", () => {
-    const logos = partnersWrapper.querySelectorAll(".partners-logo");
-    const lastLogo = logos[logos.length - 1];
-    partnersWrapper.insertBefore(lastLogo, logos[0]); // move to start
-  });
-  </script>
+      // Left arrow → move last logo to the beginning
+      arrowBtns[0].addEventListener("click", () => {
+        const logos = partnersWrapper.querySelectorAll(".partners-logo");
+        const lastLogo = logos[logos.length - 1];
+        partnersWrapper.insertBefore(lastLogo, logos[0]); // move to start
+      });
+    </script>
   </body>
 </html>
