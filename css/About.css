@@ -1,149 +1,3 @@
-body {
-  margin: 0px;
-  padding: 0px;
-  font-family: Arial, sans-serif;
-}
-
-/* navbar */
-body {
-  font-family: Arial, sans-serif;
-}
-
-/* Navbar Container */
-.nav-container {
-  margin: auto;
-  padding: 10px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: fixed;
-  background-color: #555;
-  width: 100%;
-  z-index: 1000;
-}
-
-/* Logo */
-.logo img {
-  height: 40px;
-  margin-right: 10px;
-}
-
-/* Menu Toggle (hidden on desktop) */
-.menu-toggle {
-  display: none;
-  font-size: 28px;
-  cursor: pointer;
-  color: white;
-}
-
-/* Nav Menu */
-nav {
-  flex-grow: 1;
-}
-
-.nav-menu {
-  list-style: none;
-  display: flex;
-  justify-content: flex-end;
-  flex-wrap: wrap;
-  gap: 20px;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-item {
-  position: relative;
-}
-
-.nav-item > a {
-  color: white;
-  text-decoration: none;
-  padding: 10px;
-  display: block;
-}
-
-.indicator {
-  margin-left: 5px;
-}
-
-/* Mega Menu */
-.mega-menu {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: white;
-  color: black;
-  padding: 15px;
-  display: none;
-  min-width: 200px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  z-index: 1000;
-}
-
-.mega-menu a {
-  display: block;
-  padding: 8px 0;
-  color: #004080;
-  text-decoration: none;
-}
-
-/* Show mega menu on hover (desktop) */
-.nav-item:hover .mega-menu {
-  display: block;
-}
-
-/*  Responsive */
-@media (max-width: 768px) {
-  .nav-respon {
-    display: flex;
-    justify-content: space-between;
-  }
-  .menu-toggle {
-    display: block;
-  }
-  .nav-container {
-    display: block;
-  }
-  nav {
-    flex-grow: 0;
-    width: 100%;
-  }
-
-  .nav-menu {
-    flex-direction: column;
-    display: none;
-    width: 100%;
-    background-color: #444;
-    padding: 15px 0;
-  }
-
-  .nav-menu.active {
-    display: flex;
-  }
-
-  .nav-item {
-    width: 100%;
-  }
-
-  .nav-item > a {
-    padding: 12px 20px;
-    border-bottom: 1px solid #666;
-    color: white;
-  }
-
-  .mega-menu {
-    position: static;
-    display: none;
-    box-shadow: none;
-    background-color: #f0f0f0;
-    padding-left: 20px;
-  }
-
-  .nav-item.active .mega-menu {
-    display: block;
-  }
-}
-
 /* ---------------------- Hero Section --------------------------- */
 .hero-section {
   position: relative;
@@ -168,6 +22,8 @@ nav {
   font-size: 5rem;
   font-weight: bold;
   color: darkslategrey;
+  text-align: center;
+  padding: 10px;
 }
 
 /* Second Image (hidden by default) */
@@ -182,7 +38,10 @@ nav {
   opacity: 0;
   transition: opacity 1s ease-in-out;
   display: flex;
-  align-items: end;
+  align-items: flex-end;
+  /* justify-content: space-between; */
+  flex-wrap: wrap;
+  padding: 20px;
 }
 
 /* Hover effect */
@@ -195,27 +54,82 @@ nav {
 }
 
 .hero-para {
-  font-size: smaller;
+  font-size: 0.9rem;
+  line-height: 1.5;
 }
 
 .text-container {
   width: 700px;
-  margin: 0px 0px 80px 50px;
+  max-width: 100%;
+  margin: 0 0 40px 20px;
+  color: #000;
 }
 
 .hero-video {
-  width: 300px;
+  width: 320px;
+  max-width: 90%;
   border-radius: 10px;
-  margin: 0px 0px 80px 50px;
+  margin: 0 20px 40px 20px;
 }
 .text-slace {
   border-left: 7px solid deeppink;
   padding-right: 5px;
 }
 .text-title {
-  font-size: x-large;
+  font-size: 1.6rem;
   font-weight: 900;
+  color: #000;
 }
+
+/* ---------------- Responsive Breakpoints ---------------- */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .hero-one {
+    font-size: 3rem;
+    padding: 20px;
+  }
+  .text-container {
+    width: 100%;
+    margin: 0 0 30px 0;
+  }
+  .hero-video {
+    width: 260px;
+    margin: 0 auto 30px auto;
+  }
+  .hero-two {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .text-title {
+    font-size: 1.4rem;
+  }
+  .hero-para {
+    font-size: 0.85rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .hero-one {
+    font-size: 2rem;
+  }
+  .text-title {
+    font-size: 1.2rem;
+  }
+  .hero-para {
+    font-size: 0.8rem;
+  }
+  .hero-video {
+    width: 220px;
+  }
+  .text-container {
+    margin: 0 10px 20px 10px;
+  }
+}
+
 
 /* ---------------- INVESTING IN INDIA section ------------  */
 
@@ -229,16 +143,18 @@ nav {
   display: inline-block;
   margin-bottom: 25px;
   font-size: 18px;
-  width: 500px;
+  width: auto;             
+  max-width: 100%;          
 }
 
 .para {
-  font-size: smaller;
+  font-size: 0.95rem;
+  line-height: 1.6;
 }
 
 .svg {
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
   background-color: #1e73be;
   display: flex;
   justify-content: center;
@@ -250,12 +166,13 @@ nav {
 .custom-btn {
   border: 1px solid #1e73be;
   border-radius: 30px;
-  padding: 0px 0px 0px 10px;
+  padding: 6px 12px 6px 12px;
   font-weight: 600;
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  margin: 0px;
+  margin: 5px 10px 5px 0;
+  font-size: 0.9rem;
 }
 
 .custom-btn:hover {
@@ -267,22 +184,75 @@ nav {
   width: 16px;
   height: 16px;
 }
+
 .image-card {
-  width: 300px;
-  height: 400px;
+  width: 100%;              
+  max-width: 300px;       
+  height: auto;           
 }
+
 .image-card-box {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 20px;
 }
+
 .container-fluid {
   margin: 0px;
-  padding: 0px;
+  padding: 0px;         
 }
+
 .first-box {
   padding-left: 80px;
 }
+
+/* -------- Responsive Breakpoints ------- */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .first-box {
+    padding-left: 30px;     
+  }
+  .highlight-banner {
+    font-size: 16px;
+    padding: 10px 16px;
+  }
+  .para {
+    font-size: 0.9rem;
+  }
+  .image-card {
+    max-width: 250px;
+  }
+}
+
+/* Mobiles */
+@media (max-width: 576px) {
+  .first-box {
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;     
+  }
+  .highlight-banner {
+    font-size: 14px;
+    width: 100%;           
+    border-radius: 30px;
+    text-align: center;
+  }
+  .custom-btn {
+    width: 100%;           
+    justify-content: center;
+  }
+  .svg {
+    height: 30px;
+    width: 30px;
+  }
+  .image-card {
+    max-width: 200px;
+    margin-top: 15px;
+  }
+}
+
 
 /*---------------------- our services ------------------------- */
 .services-section {
@@ -561,3 +531,185 @@ nav {
   font-size: 40px;
   color: #d6336c;
 }
+
+/* ---------------------- Upsida Facilities ---------------------  */
+
+.Facilities {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.Facilities-text {
+  text-decoration: underline 2px black;
+  text-underline-offset: 10px;
+  font-size: 1.5rem;
+}
+
+/* Tabs */
+.tab-container {
+  width: 100%;     
+  max-width: 1200px;
+}
+
+.custom-tabs {
+  gap: 5px;
+  background: #2563eb;
+  border-radius: 0px 50px 50px 0px;
+  padding: 8px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;   
+  -webkit-overflow-scrolling: touch;
+}
+
+.custom-tabs .nav-pills {
+  flex-wrap: nowrap;   
+  gap: 5px;
+}
+
+.custom-tabs .nav-pills .nav-link {
+  border-radius: 50px;
+  padding: 8px 16px;
+  font-weight: 500;
+  color: #2563eb;
+  background: #fff;
+  transition: all 0.3s ease-in-out;
+  white-space: nowrap; 
+}
+
+.custom-tabs .nav-pills .nav-link.active {
+  background: #2563eb;
+  color: #fff;
+  font-weight: 600;
+}
+
+/* Facilities items */
+.facility-item {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.facility-item h5 {
+  font-weight: 700;
+  color: #000;
+  font-size: 1.1rem;
+}
+
+.facility-item p {
+  color: #555;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.facility-item::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 5px;
+  width: 3px;
+  height: 100%;
+  background: #e63946;
+  border-radius: 5px;
+}
+
+/* Right side image */
+.facility-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; 
+}
+
+.circle-wrapper {
+  position: relative;
+  width: 230px;
+  height: 220px;
+  max-width: 90%; 
+}
+
+.circle-wrapper img {
+  width: 85%;
+  height: 82%;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  object-fit: cover;
+  z-index: 4;
+  position: relative;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Rotating dotted border */
+.circle-wrapper::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: 205px;
+  height: 205px;
+  border-radius: 50%;
+  border: 3px dotted #2563eb;
+  animation: rotateBorder 10s linear infinite;
+  z-index: 1;
+}
+
+/* White mask */
+.circle-mask {
+  position: absolute;
+  bottom: 0;
+  top: 80px;
+  left: -20px;
+  width: 220px;
+  height: 120px;
+  background: #fff;
+  z-index: 3;
+}
+
+@keyframes rotateBorder {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* ---------------- Responsive Breakpoints ---------------- */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .Facilities-text {
+    font-size: 1.3rem;
+  }
+  .circle-wrapper {
+    width: 175px;
+    height: 180px;
+  }
+  .circle-wrapper::before {
+    width: 160px;
+    height: 160px;
+  }
+}
+
+/* Mobiles */
+@media (max-width: 576px) {
+  .Facilities {
+    flex-direction: column;
+    text-align: center;
+  }
+  .Facilities-text {
+    font-size: 1.2rem;
+  }
+  .facility-item::before {
+    left: 0; 
+  }
+  .circle-wrapper {
+    width: 140px;
+    height: 147px;
+  }
+  .circle-wrapper::before {
+    width: 130px;
+    height: 130px;
+  }
+  .circle-mask {
+    display: none; 
+  }
+}
+
