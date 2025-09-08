@@ -1,0 +1,101 @@
+/* ================ contact-hero ================= */
+.contact-hero {
+  padding: 0px 40px;
+  background-color: rgb(198, 235, 245);
+}
+.hero-nav {
+  display: flex;
+  font-size: small;
+  gap: 8px;
+}
+.contact-text {
+  font-size: 5em;
+  font-weight: 600;
+  color: rgb(46, 89, 218);
+  padding: 100px 0px;
+}
+.contact-home {
+  text-decoration: none;
+  color: black;
+}
+.contact-home:hover {
+  text-decoration: underline;
+}
+
+/* ================ contact-Query-form ================== */
+.form-container,
+.contact-box {
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  padding: 25px;
+  transition: transform 0.3s ease;
+  border: 1px solid #d3d3d3;
+}
+.section-title {
+  font-weight: 700;
+  color: #2563eb;
+  border-bottom: 2px solid #2563eb;
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  font-size: 3em;
+}
+.form-label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #333;
+}
+.form-control,
+.form-select {
+  border-radius: 8px;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.form-control:focus,
+.form-select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 0.2rem rgba(37, 99, 235, 0.25);
+}
+.submit-btn {
+  border: none;
+  border-radius: 30px;
+  padding: 12px 35px;
+  font-weight: 600;
+  background: #e83e8c;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+.submit-btn:hover {
+  background: #c71d68;
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(232, 62, 140, 0.3);
+}
+.contact-header {
+  background: #2563eb;
+  color: #fff;
+  text-align: center;
+  padding: 12px;
+  font-weight: 600;
+  border-radius: 8px 8px 0 0;
+  letter-spacing: 1px;
+}
+.contact-body {
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #444;
+}
+.contact-body p {
+  margin-bottom: 10px;
+}
+.contact-body i {
+  color: #2563eb;
+  margin-right: 8px;
+  font-size: 1.1rem;
+}
+.map-embed iframe {
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+}

@@ -12,8 +12,9 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
-    <link rel="stylesheet" href="css/About.css" />
+    <link rel="stylesheet" href="css/know-more.css" />
     <link rel="stylesheet" href="css/multiple.css" />
+    <link rel="stylesheet" href="css/aboutus.css">
   </head>
   <body>
     <!-- navbar -->
@@ -45,7 +46,7 @@
             <li class="nav-item mega-parent">
               <a href="#">Online Services</a>
               <div class="mega-menu">
-                <a href="#">E-Services</a>
+                <a href="/AboutUs.html">About Us</a>
                 <a href="#">Outstanding Dues</a>
                 <a href="#">Nivesh Mitra</a>
               </div>
@@ -66,12 +67,7 @@
               </div>
             </li>
             <li class="nav-item mega-parent">
-              <a href="#">Contact Us</a>
-              <div class="mega-menu">
-                <a href="/AboutUs.html">About US</a>
-                <a href="#">Regional Office</a>
-                <a href="#">Division Office</a>
-              </div>
+              <a href="/contuctUs.html">Contact Us</a>
             </li>
             <li class="nav-item mega-parent">
               <a href="#">Investor Corner</a>
@@ -85,39 +81,42 @@
       </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero-section">
-      <!-- First image with text -->
-      <div class="hero-one">UPSIDA OPPORTUNITY</div>
+    <!-- About Us Section -->
+    <section class="about-header py-5">
+      <div class="container-fluid">
+        <div class="row align-items-center about-hero-section">
+          <!-- Left Content -->
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <h2 class="about-title mb-5">ABOUT US</h2>
+            <nav aria-label="breadcrumb" id="about-section">
+              <ul class="breadcrumb">
+                <div class="striped-circle left-circle"></div>
+                <div class="breadcrumb breadcrumb-item" id="breadcrum">
+                  <li>
+                    <a href="/index.html" id="text-home">Home</a>
+                  </li>
+                  <div>></div>
+                  <li class="active" aria-current="page">About Us</li>
+                </div>
+              </ul>
+            </nav>
+          </div>
 
-      <!-- Second image -->
-      <div class="hero-two">
-        <div class="text-container">
-          <h1 class="text-title">
-            <span class="text-slace"></span>UPSIDA OPPORTUNITY
-            _________________________
-          </h1>
-          <p class="hero-para">
-            UPSIDA's ongoing evolution spans numerous sectors, each contributing
-            to its impressive growth trajectory. Through ambitious initiatives
-            and strategic investments, UPSIDA is fostering innovation,
-            efficiency, and sustainability, positioning itself as a global
-            player. Embracing digitalisation and modernisation, the nation is
-            driving inclusive growth, job creation, and improved living
-            standards. This comprehensive transformation reflects UPSIDA's
-            resilience, adaptability, and steadfast dedication to forging a
-            prosperous and progressive future for all its people.
-          </p>
-        </div>
-        <div>
-          <video
-            src="/assets/videos/FINAL Video.mp4"
-            autoplay
-            muted
-            loop
-            controls
-            class="hero-video"
-          ></video>
+          <!-- Right Image with Shapes -->
+          <div class="col-lg-6 text-center position-relative">
+            <div class="about-image-wrapper">
+              <img
+                src="/assets/images/icon-img/photo-1505761671935-60b3a7427bad.jfif"
+                class="about-image"
+                alt="About Us"
+              />
+              <div class="striped-circle right-circle"></div>
+              <!-- Rotating Segment -->
+              <div class="rotating-segment">
+                <span></span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -365,289 +364,187 @@
       </div>
     </section>
 
-    <!-- Upsida Facilities -->
-    <section class="facilities-section my-5">
+    <!-- testimonial-section -->
+    <section class="testimonial-section">
       <div class="container">
-        <div class="row">
-          <div class="Facilities">
-            <div>
-              <h1
-                class="Facilities-text"
-                style="color: rgb(8, 139, 247); font-weight: 700"
-              >
-                Upsida Facilities
-              </h1>
-            </div>
-            <div>
-              <h3 class="Facilities-text" id="tabTitle">
-                Infrastructure Details
-              </h3>
-            </div>
+        <div
+          id="testimonialCarousel"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <!-- Indicators -->
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#testimonialCarousel"
+              data-bs-slide-to="0"
+              class="active"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#testimonialCarousel"
+              data-bs-slide-to="1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#testimonialCarousel"
+              data-bs-slide-to="2"
+            ></button>
           </div>
-        </div>
-      </div>
 
-      <!-- Tabs -->
-      <div class="tab-container my-4">
-        <div class="custom-tabs mx-auto">
-          <ul class="nav nav-pills justify-content-between" id="tabs">
-            <li class="nav-item flex-fill text-center">
-              <a class="nav-link active" data-bs-toggle="pill" href="#infra"
-                >Infrastructure</a
-              >
-            </li>
-            <li class="nav-item flex-fill text-center">
-              <a class="nav-link" data-bs-toggle="pill" href="#cities"
-                >Greenfield Industrial Cities</a
-              >
-            </li>
-            <li class="nav-item flex-fill text-center">
-              <a class="nav-link" data-bs-toggle="pill" href="#corridors"
-                >Industrial Corridors</a
-              >
-            </li>
-            <li class="nav-item flex-fill text-center">
-              <a class="nav-link" data-bs-toggle="pill" href="#healthcare"
-                >Healthcare</a
-              >
-            </li>
-            <li class="nav-item flex-fill text-center">
-              <a class="nav-link" data-bs-toggle="pill" href="#hdi"
-                >HDI/Human Resource</a
-              >
-            </li>
-            <li class="nav-item flex-fill text-center">
-              <a class="nav-link" data-bs-toggle="pill" href="#tourism"
-                >Tourism</a
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Tab Content -->
-      <div class="tab-content container">
-        <!-- Infrastructure -->
-        <div class="tab-pane fade show active" id="infra" role="tabpanel">
-          <div class="row align-items-center">
-            <div class="col-md-8">
-              <div class="row">
-                <div class="col-md-6 facility-item">
-                  <h5>2nd largest</h5>
-                  <p>Road Network Globally</p>
-                </div>
-                <div class="col-md-6 facility-item">
-                  <h5>2nd largest</h5>
-                  <p>Rail Network Globally</p>
-                </div>
-                <div class="col-md-6 facility-item">
-                  <h5>14.5%</h5>
-                  <p>CAGR of the Domestic aviation sector</p>
-                </div>
-                <div class="col-md-6 facility-item">
-                  <h5>39,000</h5>
-                  <p>
-                    Unnecessary compliances and 1,500 archaic laws removed to
-                    ensure EoDB
-                  </p>
-                </div>
-                <div class="col-md-6 facility-item">
-                  <h5>Port Handling</h5>
-                  <p>Capacity to be quadrupled by 2047</p>
-                </div>
-                <div class="col-md-6 facility-item">
-                  <h5>95+ minerals</h5>
-                  <p>
-                    India produces over 95 minerals (fuel, metallic,
-                    non-metallic, atomic & minor)
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 facility-img">
-              <div class="circle-wrapper">
-                <div class="circle-mask"></div>
-                <img
-                  src="assets/images/about/infrastructure_1.png"
-                  alt="Infrastructure"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Greenfield Industria Cities -->
-        <div class="tab-pane fade" id="cities" role="tabpanel">
-          <div class="row align-items-center">
-            <div class="col-md-8">
-              <div class="facility-item">
-                <h5>20+ Cities</h5>
-                <p>Upcoming world-class industrial hubs</p>
-              </div>
-              <div class="facility-item">
-                <h5>Smart Infrastructure</h5>
-                <p>Integrated transport & logistics zones</p>
-              </div>
-            </div>
-            <div class="col-md-4 facility-img">
-              <div class="circle-wrapper">
-                <div class="circle-mask"></div>
-                <img
-                  src="assets/images/about/greenfield_0.png"
-                  alt="Infrastructure"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Industrial Corridors -->
-        <div class="tab-pane fade" id="corridors" role="tabpanel">
-          <div class="row align-items-center">
-            <div class="col-md-8">
-              <div class="row">
-                <div class="facility-item col">
-                  <h5>11</h5>
-                  <p>National Industrial Corridors being developed</p>
-                </div>
-                <div class="facility-item col">
-                  <h5>276</h5>
-                  <p>Operational Special Economic Zones</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 facility-img">
-              <div class="circle-wrapper">
-                <div class="circle-mask"></div>
-                <img
-                  src="assets/images/about/industrial_0.png"
-                  alt="Infrastructure"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Healthcare -->
-        <div class="tab-pane fade" id="healthcare" role="tabpanel">
-          <div class="row align-items-center">
-            <div class="col-md-8">
-              <div class="row">
-                <div class="facility-item col">
-                  <h5>4000+</h5>
-                  <p>Healthcare Startups</p>
-                </div>
-                <div class="facility-item col">
-                  <h5>60%</h5>
-                  <p>Of global vaccine production</p>
-                </div>
-                <div class="facility-item col">
-                  <h5>15%</h5>
-                  <p>CAGR of the Medtech industry</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 facility-img">
-              <div class="circle-wrapper">
-                <div class="circle-mask"></div>
-                <img
-                  src="assets/images/about/health_care_0.png"
-                  alt="Infrastructure"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- HDI/Human Resource -->
-        <div class="tab-pane fade" id="hdi" role="tabpanel">
-          <div class="row align-items-center">
-            <div class="col-md-8">
-              <div class="row row-col-3">
-                <div class="col">
-                  <div class="facility-item">
-                    <h5>34%</h5>
+          <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div class="row g-4">
+                <div class="col-md-6">
+                  <div class="testimonial-card">
+                    <div class="testimonial-logo">
+                      <span>PayPal</span>
+                      <img
+                        src="assets/images/about/frame_61.png"
+                        alt="PayPal"
+                      />
+                    </div>
+                    <img
+                      src="assets/images/about/ellipse_66.png"
+                      alt="Profile"
+                      class="profile"
+                    />
                     <p>
-                      of the total STEM graduates in the world are from India
+                      I congratulate Invest India on being an amazing catalyst
+                      in helping businesses grow in India. Companies like...
                     </p>
-                  </div>
-                  <div class="facility-item">
-                    <h5>28.7 years</h5>
-                    <p>Median age of the population</p>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="facility-item">
-                    <h5>3rd highest</h5>
-                    <p>Number of journal articles in science and engineering</p>
-                  </div>
-                  <div class="facility-item">
-                    <h5>72 years</h5>
-                    <p>Average life expectancy</p>
+                    <h6>- ANUPAM PAHUJA</h6>
+                    <small
+                      >Vice President - South East Asia, Middle East & Africa,
+                      PayPal</small
+                    >
                   </div>
                 </div>
-                <div class="col">
-                  <div class="facility-item">
-                    <h5>42nd</h5>
-                    <p>Rank in International IP Index 2024</p>
-                  </div>
-                  <div class="facility-item">
-                    <h5>44 Indian Universities</h5>
+                <div class="col-md-6">
+                  <div class="testimonial-card">
+                    <div class="testimonial-logo">
+                      <span>Walmart</span>
+                      <img
+                        src="assets/images/about/frame_70.png"
+                        alt="Walmart"
+                      />
+                    </div>
+                    <img
+                      src="assets/images/about/ellipse_65.png"
+                      alt="Profile"
+                      class="profile"
+                    />
                     <p>
-                      Among the top 1000 in the World University Rankings 2024
+                      The smoothening of obstacles, the facilitation of
+                      investing and doing business has been made evident in...
                     </p>
+                    <h6>- DAN BRYANT</h6>
+                    <small
+                      >SVP, Global Public Policy & Government Affairs,
+                      Walmart</small
+                    >
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-md-4 facility-img">
-              <div class="circle-wrapper">
-                <div class="circle-mask"></div>
-                <img src="assets/images/about/hdi_0.png" alt="Infrastructure" />
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <!-- Tourism -->
-        <div class="tab-pane fade" id="tourism" role="tabpanel">
-          <div class="row align-items-center">
-            <div class="col-md-8">
-              <div class="row row-col-3">
-                <div class="col">
-                  <div class="facility-item">
-                    <h5>9.52 Mn</h5>
-                    <p>Foreign tourists travelled to India in 2023</p>
-                  </div>
-                  <div class="facility-item">
-                    <h5>7100+</h5>
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <div class="row g-4">
+                <div class="col-md-6">
+                  <div class="testimonial-card">
+                    <div class="testimonial-logo">
+                      <span>IBM</span>
+                      <img src="assets/images/about/frame_65.png" alt="IBM" />
+                    </div>
+                    <img
+                      src="assets/images/about/ellipse_60_0.png"
+                      alt="Profile"
+                      class="profile"
+                    />
                     <p>
-                      Daily Aircraft Movement from 33 international and 105
-                      domestic airports
+                      We lean on organizations within the government like Invest
+                      India to ensure that our investments are...
                     </p>
+                    <h6>- VANITHA NARAYANAN</h6>
+                    <small>Former Chairman, IBM India Pvt. Ltd.</small>
                   </div>
                 </div>
-                <div class="col">
-                  <div class="facility-item">
-                    <h5>$28 Bn</h5>
-                    <p>Forex earned in 2023</p>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="facility-item">
-                    <h5>42</h5>
-                    <p>World Heritage Sites</p>
+                <div class="col-md-6">
+                  <div class="testimonial-card">
+                    <div class="testimonial-logo">
+                      <span>Statkraft</span>
+                      <img
+                        src="assets/images/about/frame_69.png"
+                        alt="Statkraft"
+                      />
+                    </div>
+                    <img
+                      src="assets/images/about/ellipse_61.png"
+                      alt="Profile"
+                      class="profile"
+                    />
+                    <p>
+                      We express gratitude to Invest India for its invaluable
+                      guidance and timely support throughout the...
+                    </p>
+                    <h6>- UGUR IPEK</h6>
+                    <small
+                      >Head of Strategy & New Business Development,
+                      Statkraft</small
+                    >
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-md-4 facility-img">
-              <div class="circle-wrapper">
-                <div class="circle-mask"></div>
-                <img
-                  src="assets/images/about/tourism_0.png"
-                  alt="Infrastructure"
-                />
+
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+              <div class="row g-4">
+                <div class="col-md-6">
+                  <div class="testimonial-card">
+                    <div class="testimonial-logo">
+                      <span>IBM</span>
+                      <img src="assets/images/about/frame_63.png" alt="IBM" />
+                    </div>
+                    <img
+                      src="assets/images/about/ellipse_64.png"
+                      alt="Profile"
+                      class="profile"
+                    />
+                    <p>
+                      We thank Invest India for their invaluable and unwavering
+                      support and look forward to continued support as we make
+                      progress on our project.
+                    </p>
+                    <h6>- Girish D Kulkarni</h6>
+                    <small>Country Managing Director, Nidec Corporation </small>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="testimonial-card">
+                    <div class="testimonial-logo">
+                      <span>Statkraft</span>
+                      <img
+                        src="assets/images/about/frame_68.png"
+                        alt="Statkraft"
+                      />
+                    </div>
+                    <img
+                      src="assets/images/about/ellipse_62.png"
+                      alt="Profile"
+                      class="profile"
+                    />
+                    <p>
+                      Invest India team was extremely responsive to our needs
+                      and, in most cases, proactively reached out to offer
+                      assistance, which is heart-warming, to say the least.
+                    </p>
+                    <h6>- Ganesh Shenoy</h6>
+                    <small>Chairman, Norwegian Business Association</small>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -655,55 +552,145 @@
       </div>
     </section>
 
-    <!-- success section -->
-    <section class="success-section">
-      <div class="container">
-        <div class="row align-items-center g-5">
-          <!-- Video Left -->
-          <div class="col-lg-6">
-            <div class="video-box">
-              <video src="/assets/videos/FINAL Video.mp4" controls></video>
+    <!-- Meet Our Team -->
+    <section class="container py-5">
+      <!-- Title & Buttons -->
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h3 class="section-title">Meet Our Team</h3>
+        <div>
+          <button id="btn-directors" class="btn btn-toggle btn-active">
+            BOARD OF DIRECTORS
+          </button>
+          <button id="btn-leadership" class="btn btn-toggle btn-outline-danger">
+            LEADERSHIP TEAM
+          </button>
+        </div>
+      </div>
+
+      <!-- Board of Directors (default visible) -->
+      <div id="directors-section">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="team-card">
+              <img
+                src="/assets/images/about/team/shri_amardeep_singh_1.png"
+                alt="Team Member"
+              />
+              <h6>Shri Amardeep Singh Bhatia</h6>
+              <p>Secretary, DPIIT & Chairman, Invest India</p>
             </div>
           </div>
+          <div class="col-md-4">
+            <div class="team-card">
+              <img
+                src="/assets/images/about/team/mask_group_22.png"
+                alt="Team Member"
+              />
+              <h6>Ms Nivruti Rai</h6>
+              <p>MD & CEO, Invest India</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="team-card">
+              <img
+                src="/assets/images/about/team/shri_amardeep_singh_12.png"
+                alt="Team Member"
+              />
+              <h6>Smt. Arti Bhatnagar</h6>
+              <p>SS & FA, DPIIT</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="team-card">
+              <img
+                src="/assets/images/about/team/lawnkw8w_400x400-removebg-preview_1_0.png"
+                alt="Team Member"
+              />
+              <h6>Shri P.S. Gangadhar</h6>
+              <p>
+                Joint Secretary (Economic Diplomacy), Ministry of External
+                Affairs
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="team-card">
+              <img
+                src="/assets/images/about/team/shri_amardeep_singh_6.png"
+                alt="Team Member"
+              />
+              <h6>Shri Chandrajit Banerjee</h6>
+              <p>Director General, Confederation of Indian Industry</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="team-card">
+              <img
+                src="/assets/images/about/team/shri_amardeep_singh_7.png"
+                alt="Team Member"
+              />
+              <h6>Shri Pankaj R Patel</h6>
+              <p>Chairman, Zydus Lifesciences Ltd</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-          <!-- Content Right -->
-          <div class="col-lg-6">
-            <h2>Featured <span>Success Stories UPSIDA</span></h2>
-            <p class="sub-heading">
-              The Uttar Pradesh State Industrial Development Authority (UPSIDA)
-              is the central organization charged with the growth of industry
-              and infrastructure
-            </p>
-
-            <h5 class="fw-bold text-primary">About</h5>
-            <ul>
-              <li>
-                It has been a pioneer for industrial promotion in the state for
-                many years and has been critical in maintaining the state's
-                numero uno position among other states.
-              </li>
-              <li>
-                UPSIDA has developed 155 industrial areas in Uttar Pradesh on a
-                total of 20,000 Acres Land bank.
-              </li>
-              <li>
-                UPSIDA's initiative - Citizen Facilitation Center, designed to
-                maximize support for investors and entrepreneurs, is elevating
-                the customer experience across the state. For customer
-                assistance, call at 0120-4401000
-              </li>
-            </ul>
-
-            <div class="mt-4">
-              <a
-                href="#"
-                class="btn btn-link text-decoration-none fw-semibold text-primary me-3"
-              >
-                Become the next success story
-              </a>
-              <a href="#" class="btn btn-custom">
-                CONTACT US NOW <i class="bi bi-arrow-right-circle"></i>
-              </a>
+      <!-- Leadership Team (hidden initially) -->
+      <div id="leadership-section" style="display: none">
+        <!-- Highlighted Profile -->
+        <div class="highlight-profile">
+          <img
+            src="/assets/images/about/team/mask_group_22.png"
+            alt="Highlight"
+          />
+          <h5>Ms Nivruti Rai</h5>
+          <p>MD & CEO, Invest India</p>
+        </div>
+        <!-- More Profiles -->
+        <div class="row text-center">
+          <div class="col-md-3">
+            <div class="team-card-1">
+              <img
+                class="circle-img"
+                src="/assets/images/about/team/Sidharth Narayanan.jpg"
+                alt="Team Member"
+              />
+              <h6>Sidharth Narayanan</h6>
+              <p>SVP & Chief Strategy Officer</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="team-card-1">
+              <img
+                class="circle-img"
+                src="/assets/images/about/team/Anantha Narayanan.jpeg"
+                alt="Team Member"
+              />
+              <h6>Ananthanarayanan Shanmugam</h6>
+              <p>SVP- Industrial Sectors & Govt. Relations</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="team-card-1">
+              <img
+                class="circle-img"
+                src="/assets/images/about/team/a17a2019-01_1.jpg"
+                alt="Team Member"
+              />
+              <h6>Kulathumani Karthikeyen</h6>
+              <p>VP - States & Special Projects</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="team-card-1">
+              <img
+                class="circle-img"
+                src="/assets/images/about/team/group_1000006727_0.png"
+                alt="Team Member"
+              />
+              <h6>Vinod Subramanian</h6>
+              <p>VP - Technology Sectors</p>
             </div>
           </div>
         </div>
@@ -798,87 +785,29 @@
       </div>
     </footer>
 
-    <!-- Bootstrap icons -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="javascript/multiplte.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-      // Data for initiatives
-      const initiatives = {
-        dpiit: {
-          title: "DPIIT",
-          text: "Department for Promotion of Industry and Internal Trade (DPIIT) is responsible for formulation and implementation of promotional measures for industrial development.",
-          img: "https://www.startupUPSIDA.gov.in/content/dam/invest-UPSIDA/newhomepage/logo/dpiit-logo.svg",
-        },
-        nsws: {
-          title: "NSWS",
-          text: "National Single Window System (NSWS) provides a one-stop shop for investors to get approvals and clearances.",
-          img: "https://www.nsws.gov.in/sites/default/files/nswsLogo.png",
-        },
-        invest: {
-          title: "INVEST UPSIDA",
-          text: "Invest UPSIDA is the National Investment Promotion and Facilitation Agency of UPSIDA, promoting and facilitating investments.",
-          img: "https://www.investUPSIDA.gov.in/themes/investUPSIDA/logo.svg",
-        },
-        odop: {
-          title: "ODOP",
-          text: "The One District One Product (ODOP) initiative aims to promote the district as a hub of a particular product in UPSIDA.",
-          img: "https://www.odopUPSIDA.com/assets/img/logo.png",
-        },
-      };
+      const btnDirectors = document.getElementById("btn-directors");
+      const btnLeadership = document.getElementById("btn-leadership");
+      const directorsSection = document.getElementById("directors-section");
+      const leadershipSection = document.getElementById("leadership-section");
 
-      // Elements
-      const logo = document.getElementById("initiative-logo");
-      const title = document.getElementById("initiative-title");
-      const text = document.getElementById("initiative-text");
-
-      // Event listener for partner logos
-      document.querySelectorAll(".partners img").forEach((img) => {
-        img.addEventListener("click", () => {
-          const id = img.getAttribute("data-id");
-          const data = initiatives[id];
-
-          // Update card content
-          logo.src = data.img;
-          title.textContent = data.title;
-          text.textContent = data.text;
-        });
+      btnDirectors.addEventListener("click", function () {
+        directorsSection.style.display = "block";
+        leadershipSection.style.display = "none";
+        btnDirectors.classList.add("btn-active");
+        btnDirectors.classList.remove("btn-outline-danger");
+        btnLeadership.classList.remove("btn-active");
+        btnLeadership.classList.add("btn-outline-danger");
       });
 
-      const partnersWrapper = document.querySelector(".partners");
-      const arrowBtns = document.querySelectorAll(".arrow-btn");
-
-      // Right arrow → move first logo to the end
-      arrowBtns[1].addEventListener("click", () => {
-        const firstLogo = partnersWrapper.querySelector(".partners-logo");
-        partnersWrapper.appendChild(firstLogo); // move to end
-      });
-
-      // Left arrow → move last logo to the beginning
-      arrowBtns[0].addEventListener("click", () => {
-        const logos = partnersWrapper.querySelectorAll(".partners-logo");
-        const lastLogo = logos[logos.length - 1];
-        partnersWrapper.insertBefore(lastLogo, logos[0]); // move to start
-      });
-
-      // Upsida Facilities navbar
-      document.querySelectorAll("#tabs .nav-link").forEach((tab) => {
-        tab.addEventListener("click", function () {
-          // Remove active class from all tabs
-          document
-            .querySelectorAll("#tabs .nav-link")
-            .forEach((link) => link.classList.remove("active"));
-
-          // Add active class to clicked tab
-          this.classList.add("active");
-
-          // Get tab text and update heading
-          let title = this.textContent.trim();
-          document.getElementById("tabTitle").innerText = title + " Details";
-        });
+      btnLeadership.addEventListener("click", function () {
+        directorsSection.style.display = "none";
+        leadershipSection.style.display = "block";
+        btnLeadership.classList.add("btn-active");
+        btnLeadership.classList.remove("btn-outline-danger");
+        btnDirectors.classList.remove("btn-active");
+        btnDirectors.classList.add("btn-outline-danger");
       });
     </script>
   </body>

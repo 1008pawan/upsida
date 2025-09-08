@@ -1,0 +1,341 @@
+/* --------------- About Section ------------------- */
+.about-header {
+  background: #eaf4fb;
+  border-bottom: 1px solid #ddd;
+  overflow: hidden;
+  height: 400px;
+}
+
+.about-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #3d7dd6;
+  padding-bottom: 80px;
+  padding-left: 100px;
+}
+#text-home:hover {
+  text-decoration: underline;
+}
+.breadcrumb {
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  padding-left: 30px;
+}
+ul {
+  list-style-type: none;
+}
+
+/* Image Wrapper */
+.about-image-wrapper {
+  position: relative;
+  display: inline-block;
+  top: 70px;
+  z-index: 2;
+}
+
+.about-image {
+  border-radius: 50%;
+  border: 1px solid #9b9b9b;
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  padding: 20px;
+}
+
+/* Rotating Segment */
+.rotating-segment {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  animation: rotateSegment 10s linear infinite;
+  pointer-events: none;
+}
+
+.rotating-segment span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 40px;
+  height: 5px;
+  background: #e91e63;
+  border-radius: 5px;
+  transform: translateX(-50%);
+}
+
+@keyframes rotateSegment {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+.about-hero-section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+/* Decorative Striped Circles */
+.striped-circle {
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background: repeating-linear-gradient(
+    45deg,
+    #007bff33,
+    #007bff33 10px,
+    transparent 10px,
+    transparent 20px
+  );
+  opacity: 0.5;
+}
+
+.left-circle {
+  /* bottom: -40px; */
+  left: 0px;
+  top: 240px;
+}
+
+.right-circle {
+  top: -40px;
+  right: -50px;
+  z-index: -1;
+  width: 250px;
+}
+
+/* Subtitle */
+.about-subtitle {
+  font-size: 2.25rem;
+  font-weight: 600;
+  color: #1d3557;
+  display: flex;
+  justify-content: center;
+}
+
+/* ---------------- INVESTING IN INDIA section ------------  */
+
+.highlight-banner {
+  background-color: #e83e8c;
+  color: white;
+  font-weight: bold;
+  padding: 12px 20px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  display: inline-block;
+  margin-bottom: 25px;
+  font-size: 18px;
+  width: auto;             
+  max-width: 100%;          
+}
+
+.para {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.svg {
+  height: 40px;
+  width: 40px;
+  background-color: #1e73be;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+}
+
+/* Buttons */
+.custom-btn {
+  border: 1px solid #1e73be;
+  border-radius: 30px;
+  padding: 6px 12px 6px 12px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 5px 10px 5px 0;
+  font-size: 0.9rem;
+}
+
+.custom-btn:hover {
+  background-color: #1e73be;
+  color: white;
+}
+
+.custom-btn svg {
+  width: 16px;
+  height: 16px;
+}
+
+.image-card {
+  width: 100%;              
+  max-width: 300px;       
+  height: auto;           
+}
+
+.image-card-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.container-fluid {
+  margin: 0px;
+  padding: 0px;         
+}
+
+.first-box {
+  padding-left: 80px;
+}
+
+/* ================= testimonial-section ==================== */
+.testimonial-section {
+  background: #5d7c8c; /* same grey-blue background */
+  padding: 60px 0;
+}
+.testimonial-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 40px 30px;
+  color: #fff;
+  min-height: 340px;
+  position: relative;
+}
+.testimonial-card img.profile {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+.testimonial-card h6 {
+  font-weight: bold;
+  margin-top: 15px;
+  text-transform: uppercase;
+}
+.testimonial-card small {
+  display: block;
+  margin-top: 5px;
+  opacity: 0.9;
+}
+.testimonial-logo {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.testimonial-logo img {
+  max-height: 30px;
+  margin-left: 8px;
+}
+/* Dots */
+.carousel-indicators [data-bs-target] {
+  background-color: #f6f8fa;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.carousel-indicators {
+  bottom: -60px;
+}
+
+/* ============== Meet Our Team ================== */
+.section-title {
+  font-weight: bold;
+  color: #1a4dab;
+}
+.section-title::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 2px;
+  margin-left: 0px;
+  background: #000;
+  vertical-align: middle;
+}
+.team-card {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.team-card img {
+  width: 100%;
+  border-radius: 4px;
+  object-fit: cover;
+}
+/* Circular style for More Profiles */
+.circle-img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: auto;
+  display: block;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+.team-card h6 {
+  font-weight: bold;
+  margin-top: 15px;
+}
+.team-card p {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+  border-top: 1px solid #e83e8c;
+  display: inline-block;
+  padding-top: 5px;
+}
+.team-card-1 h6 {
+  font-weight: bold;
+  margin-top: 15px;
+}
+.team-card-1 p {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+  border-top: 1px solid #e83e8c;
+  display: inline-block;
+  padding-top: 5px;
+}
+.btn-toggle {
+  border-radius: 25px;
+  font-weight: 600;
+  padding: 6px 18px;
+  margin-left: 8px;
+}
+.btn-active {
+  background: #e83e8c;
+  color: white;
+  box-shadow: 0px 4px 8px rgba(232, 62, 140, 0.5);
+}
+.highlight-profile {
+  text-align: center;
+  margin: 40px 0;
+}
+.highlight-profile img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.highlight-profile h5 {
+  font-weight: bold;
+  margin-top: 15px;
+}
+.highlight-profile p {
+  font-size: 15px;
+  color: #333;
+  border-top: 2px solid #e83e8c;
+  display: inline-block;
+  padding-top: 5px;
+}

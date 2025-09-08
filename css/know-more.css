@@ -130,81 +130,106 @@
   }
 }
 
+/* ---------------- second-hero section ------------  */
 
-/* ---------------- INVESTING IN INDIA section ------------  */
+/* Tabs Styling */
+.nav-pills {
+  justify-content: center;
+  margin-bottom: 2rem;
+  border-radius: 50px;
+  background: #f8f9fa;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  padding: 6px;
+}
+.nav-pills .nav-link {
+  border-radius: 50px;
+  padding: 10px 25px;
+  color: #000;
+  font-weight: 600;
+}
+.nav-pills .nav-link.active {
+  background: #1a4dab;
+  color: #fff;
+  box-shadow: 0px 4px 10px rgba(26, 77, 171, 0.5);
+}
 
-.highlight-banner {
-  background-color: #e83e8c;
+/* Section Text */
+.tabpanel-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Floating Images */
+.floating-images {
+  padding: 0px 40px;
+  margin-top: 20px;
+}
+.floating-images img {
+  width: 150px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+.image-1 {
+  display: flex;
+  justify-content: end;
+}
+.image-3 {
+  display: flex;
+  justify-content: end;
+}
+
+/* Stats Bar */
+.stats-bar {
   color: white;
   font-weight: bold;
   padding: 12px 20px;
-  border-top-right-radius: 50px;
-  border-bottom-right-radius: 50px;
-  display: inline-block;
-  margin-bottom: 25px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  display: flex;
   font-size: 18px;
-  width: auto;             
-  max-width: 100%;          
+  width: 100%;
+  max-width: 100%;
 }
-
-.para {
-  font-size: 0.95rem;
-  line-height: 1.6;
+.stats-bar .stat {
+  flex: 1;
 }
-
-.svg {
-  height: 40px;
-  width: 40px;
-  background-color: #1e73be;
+.text-flex {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50px;
+}
+.text-flex .stat {
+  padding: 5px;
+  flex: 1;
 }
 
-/* Buttons */
-.custom-btn {
-  border: 1px solid #1e73be;
-  border-radius: 30px;
-  padding: 6px 12px 6px 12px;
-  font-weight: 600;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  margin: 5px 10px 5px 0;
-  font-size: 0.9rem;
+/* Different Colors */
+.vision-bar {
+  background: #e83e8c;
+}
+.insights-bar {
+  background: #7d3cff;
+}
+.budget-bar {
+  background: #ff3e3e;
 }
 
-.custom-btn:hover {
-  background-color: #1e73be;
-  color: white;
-}
-
-.custom-btn svg {
-  width: 16px;
-  height: 16px;
-}
-
-.image-card {
-  width: 100%;              
-  max-width: 300px;       
-  height: auto;           
-}
-
-.image-card-box {
+/* extra */
+.mt-4 {
+  width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
+  justify-content: end;
 }
-
-.container-fluid {
-  margin: 0px;
-  padding: 0px;         
+.content-amrit-text {
+  width: 70%;
 }
-
-.first-box {
-  padding-left: 80px;
+.nav-btn {
+  width: 33%;
+}
+.nav-btn-link {
+  width: 100%;
 }
 
 /* -------- Responsive Breakpoints ------- */
@@ -212,7 +237,7 @@
 /* Tablets */
 @media (max-width: 992px) {
   .first-box {
-    padding-left: 30px;     
+    padding-left: 30px;
   }
   .highlight-banner {
     font-size: 16px;
@@ -231,16 +256,16 @@
   .first-box {
     padding-left: 15px;
     padding-right: 15px;
-    text-align: center;     
+    text-align: center;
   }
   .highlight-banner {
     font-size: 14px;
-    width: 100%;           
+    width: 100%;
     border-radius: 30px;
     text-align: center;
   }
   .custom-btn {
-    width: 100%;           
+    width: 100%;
     justify-content: center;
   }
   .svg {
@@ -253,109 +278,6 @@
   }
 }
 
-
-/*---------------------- our services ------------------------- */
-.services-section {
-  padding: 50px 0;
-}
-
-.services-section h2 {
-  font-weight: 700;
-  margin-bottom: 30px;
-  color: #1d3b70;
-}
-
-/* Flex layout */
-.services-container {
-  display: flex;
-  gap: 15px;
-  flex-wrap: wrap;
-}
-
-.service-card {
-  flex: 1;
-  border: 1px solid #e0e6ed;
-  border-radius: 15px;
-  padding: 25px;
-  background: #fff;
-  transition: all 0.5s ease;
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-
-  /* Animation start */
-  opacity: 0;
-  transform: translateY(40px);
-  animation: fadeUp 0.8s ease forwards;
-}
-
-.service-card:nth-child(1) {
-  animation-delay: 0.2s;
-}
-.service-card:nth-child(2) {
-  animation-delay: 0.4s;
-}
-.service-card:nth-child(3) {
-  animation-delay: 0.6s;
-}
-.service-card:nth-child(4) {
-  animation-delay: 0.8s;
-}
-.service-card:nth-child(5) {
-  animation-delay: 1s;
-}
-
-@keyframes fadeUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.service-card:hover {
-  flex: 2.5;
-  background: #1d77d4;
-  color: #fff;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-  transform: translateY(-10px) scale(1.05);
-}
-
-.service-card i {
-  font-size: 40px;
-  color: #1d77d4;
-  margin-bottom: 15px;
-  transition: color 0.3s ease;
-}
-
-.service-card:hover i {
-  color: #fff;
-}
-
-.service-card h5 {
-  font-weight: 600;
-  margin-bottom: 15px;
-  color: #1d3b70;
-  transition: color 0.3s ease;
-}
-
-.service-card:hover h5 {
-  color: #fff;
-}
-
-.service-card ul {
-  padding-left: 20px;
-  margin: 0;
-}
-
-.service-card ul li {
-  color: #333;
-  transition: color 0.3s ease;
-}
-
-.service-card:hover ul li {
-  color: #fff;
-}
 
 /*================= Initiatives services ======================== */
 
@@ -550,7 +472,7 @@
 
 /* Tabs */
 .tab-container {
-  width: 100%;     
+  width: 100%;
   max-width: 1200px;
 }
 
@@ -560,12 +482,14 @@
   border-radius: 0px 50px 50px 0px;
   padding: 8px;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-  overflow-x: auto;   
+  overflow-x: auto;
   -webkit-overflow-scrolling: touch;
 }
-
+.nav-pills{
+  margin-bottom: 0px;
+}
 .custom-tabs .nav-pills {
-  flex-wrap: nowrap;   
+  flex-wrap: nowrap;
   gap: 5px;
 }
 
@@ -576,7 +500,7 @@
   color: #2563eb;
   background: #fff;
   transition: all 0.3s ease-in-out;
-  white-space: nowrap; 
+  white-space: nowrap;
 }
 
 .custom-tabs .nav-pills .nav-link.active {
@@ -619,14 +543,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px; 
+  margin-top: 20px;
 }
 
 .circle-wrapper {
   position: relative;
   width: 230px;
   height: 220px;
-  max-width: 90%; 
+  max-width: 90%;
 }
 
 .circle-wrapper img {
@@ -645,12 +569,12 @@
   content: "";
   position: absolute;
   top: -5px;
-  left: -5px;
+  left: -6px;
   width: 205px;
   height: 205px;
   border-radius: 50%;
-  border: 3px dotted #2563eb;
-  animation: rotateBorder 10s linear infinite;
+  border: 2px dashed #2563eb;
+  animation: rotateBorder 15s linear infinite;
   z-index: 1;
 }
 
@@ -667,8 +591,12 @@
 }
 
 @keyframes rotateBorder {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /* ---------------- Responsive Breakpoints ---------------- */
@@ -698,7 +626,7 @@
     font-size: 1.2rem;
   }
   .facility-item::before {
-    left: 0; 
+    left: 0;
   }
   .circle-wrapper {
     width: 140px;
@@ -709,7 +637,6 @@
     height: 130px;
   }
   .circle-mask {
-    display: none; 
+    display: none;
   }
 }
-
