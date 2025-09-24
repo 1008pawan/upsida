@@ -1,6 +1,6 @@
 /* ==================== navbar ========================= */
 body {
-  margin: 0;
+  margin: 0px;
   font-family: Arial, sans-serif;
 }
 
@@ -56,7 +56,7 @@ body {
   padding: 15px;
   display: none;
   min-width: 200px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .mega-menu a {
@@ -124,16 +124,17 @@ footer {
   color: #1d3b70;
 }
 
+/* ---------- Footer Top ---------- */
 .footer-top {
   background: #1d77d4;
   color: #fff;
-  padding: 20px 0;
+  padding: 20px 10px;
   text-align: center;
 }
 
 .footer-top h3 {
   font-weight: 700;
-  font-size: 28px;
+  font-size: 24px;
 }
 
 .footer-top .btn-contact {
@@ -142,7 +143,8 @@ footer {
   font-weight: 600;
   border-radius: 25px;
   padding: 8px 20px;
-  margin-left: 15px;
+  margin-top: 10px;
+  display: inline-block;
 }
 
 .btn-contact:hover {
@@ -151,8 +153,12 @@ footer {
   border: 1px solid white;
 }
 
+/* ---------- Footer Middle ---------- */
 .footer-middle {
-  padding: 40px 0;
+  padding: 40px 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
 }
 
 .footer-middle h5 {
@@ -176,16 +182,30 @@ footer {
   color: #1d3b70;
 }
 
+.social-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
 .social-icons a {
   font-size: 18px;
-  margin-right: 10px;
   color: #6c757d;
 }
 
+/* Subscribe Box */
+.subscribe-box {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
 .subscribe-box input {
+  flex: 1;
   border-radius: 20px 0 0 20px;
   border: 1px solid #1d77d4;
   padding: 8px 12px;
+  min-width: 150px;
 }
 
 .subscribe-box button {
@@ -195,12 +215,12 @@ footer {
   color: #fff;
   padding: 10px 20px;
   font-weight: 600;
-}
-
-.subscribe-box button {
   display: flex;
+  align-items: center;
   gap: 5px;
 }
+
+/* Feedback Button */
 .feedback-btn {
   margin-top: 10px;
   border-radius: 20px;
@@ -216,11 +236,17 @@ footer {
   border: 1px solid #1d77d4;
 }
 
+/* ---------- Footer Bottom ---------- */
 .footer-bottom {
   border-top: 1px solid #dcdcdc;
-  padding: 15px 0;
+  padding: 15px 20px;
   font-size: 14px;
   color: #555;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .footer-bottom a {
@@ -230,10 +256,49 @@ footer {
 }
 
 .last-updated {
-  text-align: right;
   font-size: 14px;
   font-weight: 600;
   color: #1d3b70;
+  text-align: right;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  .footer-top h3 {
+    font-size: 20px;
+  }
+
+  .footer-top .btn-contact {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .last-updated {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .subscribe-box {
+    flex-direction: column;
+  }
+
+  .subscribe-box input {
+    border-radius: 20px;
+    margin-bottom: 10px;
+  }
+
+  .subscribe-box button {
+    border-radius: 20px;
+    width: 100%;
+    justify-content: center;
+  }
 }
 
 /* ==================== resource section ====================== */
@@ -294,7 +359,6 @@ footer {
 .pdf-link:hover {
   color: #1d77d4;
 }
-
 
 /* ---------------------- our services section ------------------------- */
 
@@ -471,4 +535,32 @@ footer {
 
 .service-card:hover ul li {
   color: #fff;
+}
+
+@media (max-width: 1024px) {
+  .service-card {
+    flex: 1 1 calc(50% - 15px);
+    padding: 30px;
+    font-size: 18px;
+  }
+
+  .service-card i {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  .services-container {
+    flex-direction: column;
+  }
+
+  .service-card {
+    flex: 1 1 100%;
+    padding: 35px;
+    font-size: 20px;
+  }
+
+  .service-card i {
+    font-size: 55px;
+  }
 }
