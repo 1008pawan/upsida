@@ -196,6 +196,10 @@
     border: none;
     width: 100%;
   }
+  .card-container::before {
+    padding: 0px;
+    background: none;
+  }
   .card-container {
     border-radius: 0px;
     width: 100%;
@@ -212,7 +216,7 @@
   .know-more-btn {
     margin: 40px auto;
     border-radius: 30px;
-    padding: 12px 30px;
+    padding: 5px 15px;
     font-weight: bold;
     transition: all 0.3s ease;
     position: relative;
@@ -456,7 +460,6 @@
 
   .card-bg {
     height: 500px;
-    margin: 10px;
   }
 
   .section-title {
@@ -486,12 +489,11 @@
 @media (max-width: 576px) {
   .card {
     margin: 10px auto;
-    width: 95%;
+    width: 80%;
   }
 
   .card-bg {
     height: 500px;
-    margin: 10px;
   }
 
   .section-title {

@@ -302,6 +302,7 @@ body {
   display: inline-block;
   margin-bottom: 20px;
 }
+
 .scheme-card {
   border-radius: 15px;
   border: none;
@@ -310,11 +311,14 @@ body {
   position: relative;
   height: 250px;
   transition: box-shadow 0.3s ease;
+  max-width: 100%;
 }
+
 .scheme-card .card-body {
   padding: 20px;
   display: contents;
 }
+
 .scheme-download {
   position: absolute;
   top: -10px;
@@ -324,16 +328,18 @@ body {
   padding: 15px 12px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
 .scheme-download i {
   font-size: 18px;
   color: #000;
 }
+
 .scheme-card .card-footer {
   background: #5d8fe6;
   height: 8px;
   border: none;
 }
-/* Custom arrows OUTSIDE */
+
 .carousel-control-prev,
 .carousel-control-next {
   width: auto;
@@ -341,12 +347,14 @@ body {
   transform: translateY(-50%);
   position: absolute;
 }
+
 .carousel-control-prev {
   left: -60px;
 }
 .carousel-control-next {
   right: -60px;
 }
+
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   background-color: #e83e8c;
@@ -354,19 +362,85 @@ body {
   padding: 15px;
   background-size: 50% 50%;
 }
+
 .scheme-card:hover {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
+
 .fw-bold {
   padding-top: 50px;
   padding-left: 20px;
   padding-right: 20px;
 }
+
 .card-text {
   padding-top: 10px;
   padding-left: 20px;
   padding-right: 20px;
 }
+
+
+@media (max-width: 992px) {
+  .scheme-card {
+    height: auto;
+    min-height: 220px;
+  }
+
+  .fw-bold {
+    padding-top: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .card-text {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .carousel-control-prev {
+    left: -30px;
+  }
+  .carousel-control-next {
+    right: -30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .scheme-card {
+    height: auto;
+    min-height: 180px;
+    margin-bottom: 20px;
+  }
+
+  .scheme-download {
+    top: 5px;
+    right: 10px;
+    padding: 10px;
+  }
+
+  .scheme-download i {
+    font-size: 16px;
+  }
+
+  .fw-bold {
+    font-size: 16px;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .card-text {
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    display: none;
+  }
+}
+
 
 
 /* =================== focus sector ====================== */
