@@ -9,6 +9,10 @@
       rel="stylesheet"
     />
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
@@ -118,10 +122,14 @@
     </section>
 
     <!-- Second-hero section -->
-    <section class="container-fluid py-5" style =' padding: 0px; '>
+    <section class="container-fluid py-5" style="padding: 0px">
       <!-- Tabs -->
-      <ul class="nav nav-pills mb-3 container first-nav" style="flex-direction: row;
-    flex-wrap: nowrap;" id="pills-tab" role="tablist">
+      <ul
+        class="nav nav-pills mb-3 container first-nav"
+        style="flex-direction: row; flex-wrap: nowrap"
+        id="pills-tab"
+        role="tablist"
+      >
         <li class="nav-item nav-btn" role="presentation">
           <button
             class="nav-link active nav-btn-link"
@@ -228,13 +236,22 @@
               </div>
               <div class="floating-images col-md-4">
                 <div class="image-2">
-                  <img src="/assets/images/about/second/mask_group_0_0.jpg" alt="" />
+                  <img
+                    src="/assets/images/about/second/mask_group_0_0.jpg"
+                    alt=""
+                  />
                 </div>
                 <div class="image-1">
-                  <img src="/assets/images/about/second/indian_insights_2_1_0.png" alt="" />
+                  <img
+                    src="/assets/images/about/second/indian_insights_2_1_0.png"
+                    alt=""
+                  />
                 </div>
                 <div class="image-2">
-                  <img src="/assets/images/about/second/indian_insights_3_1_0.png" alt="" />
+                  <img
+                    src="/assets/images/about/second/indian_insights_3_1_0.png"
+                    alt=""
+                  />
                 </div>
               </div>
             </div>
@@ -273,13 +290,22 @@
               </div>
               <div class="floating-images col-md-4">
                 <div class="image-1">
-                  <img src="/assets/images/about/second/budget_1_0.png" alt="" />
+                  <img
+                    src="/assets/images/about/second/budget_1_0.png"
+                    alt=""
+                  />
                 </div>
                 <div class="image-2">
-                  <img src="/assets/images/about/second/budget_2_0.png" alt="" />
+                  <img
+                    src="/assets/images/about/second/budget_2_0.png"
+                    alt=""
+                  />
                 </div>
                 <div class="image-3">
-                  <img src="/assets/images/about/second/budget_3_0.png" alt="" />
+                  <img
+                    src="/assets/images/about/second/budget_3_0.png"
+                    alt=""
+                  />
                 </div>
               </div>
             </div>
@@ -888,87 +914,8 @@
     </footer>
 
     <!-- Bootstrap icons -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/js/multiplte.js"></script>
-    <script>
-      // Data for initiatives
-      const initiatives = {
-        dpiit: {
-          title: "DPIIT",
-          text: "Department for Promotion of Industry and Internal Trade (DPIIT) is responsible for formulation and implementation of promotional measures for industrial development.",
-          img: "https://www.startupUPSIDA.gov.in/content/dam/invest-UPSIDA/newhomepage/logo/dpiit-logo.svg",
-        },
-        nsws: {
-          title: "NSWS",
-          text: "National Single Window System (NSWS) provides a one-stop shop for investors to get approvals and clearances.",
-          img: "https://www.nsws.gov.in/sites/default/files/nswsLogo.png",
-        },
-        invest: {
-          title: "INVEST UPSIDA",
-          text: "Invest UPSIDA is the National Investment Promotion and Facilitation Agency of UPSIDA, promoting and facilitating investments.",
-          img: "https://www.investUPSIDA.gov.in/themes/investUPSIDA/logo.svg",
-        },
-        odop: {
-          title: "ODOP",
-          text: "The One District One Product (ODOP) initiative aims to promote the district as a hub of a particular product in UPSIDA.",
-          img: "https://www.odopUPSIDA.com/assets/img/logo.png",
-        },
-      };
-
-      // Elements
-      const logo = document.getElementById("initiative-logo");
-      const title = document.getElementById("initiative-title");
-      const text = document.getElementById("initiative-text");
-
-      // Event listener for partner logos
-      document.querySelectorAll(".partners img").forEach((img) => {
-        img.addEventListener("click", () => {
-          const id = img.getAttribute("data-id");
-          const data = initiatives[id];
-
-          // Update card content
-          logo.src = data.img;
-          title.textContent = data.title;
-          text.textContent = data.text;
-        });
-      });
-
-      const partnersWrapper = document.querySelector(".partners");
-      const arrowBtns = document.querySelectorAll(".arrow-btn");
-
-      // Right arrow → move first logo to the end
-      arrowBtns[1].addEventListener("click", () => {
-        const firstLogo = partnersWrapper.querySelector(".partners-logo");
-        partnersWrapper.appendChild(firstLogo); // move to end
-      });
-
-      // Left arrow → move last logo to the beginning
-      arrowBtns[0].addEventListener("click", () => {
-        const logos = partnersWrapper.querySelectorAll(".partners-logo");
-        const lastLogo = logos[logos.length - 1];
-        partnersWrapper.insertBefore(lastLogo, logos[0]); // move to start
-      });
-
-      // Upsida Facilities navbar
-      document.querySelectorAll("#tabs .nav-link").forEach((tab) => {
-        tab.addEventListener("click", function () {
-          // Remove active class from all tabs
-          document
-            .querySelectorAll("#tabs .nav-link")
-            .forEach((link) => link.classList.remove("active"));
-
-          // Add active class to clicked tab
-          this.classList.add("active");
-
-          // Get tab text and update heading
-          let title = this.textContent.trim();
-          document.getElementById("tabTitle").innerText = title + " Details";
-        });
-      });
-    </script>
+    <script src="/js/about.js"></script>
   </body>
 </html>
