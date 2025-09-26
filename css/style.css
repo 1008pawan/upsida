@@ -209,7 +209,7 @@
   .info-card {
     gap: 8px;
     border-bottom: 1px solid white;
-    text-align: center;
+    text-align: left;
     width: 100%;
     display: flex;
   }
