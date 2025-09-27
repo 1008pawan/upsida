@@ -287,6 +287,10 @@
     padding: 10px 15px;
     font-weight: 100;
   }
+  .text-flex .stat {
+  padding: 0px;
+  flex: 1;
+}
 }
 
 /*================= Initiatives services ======================== */
