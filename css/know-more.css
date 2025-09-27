@@ -286,6 +286,8 @@
   .nav-pills .nav-link {
     padding: 10px 15px;
     font-weight: 100;
+    font-weight: 600;
+    font-size: 8px;
   }
   .text-flex .stat {
   padding: 0px;
@@ -513,7 +515,7 @@
 /* Mobiles (≤768px) */
 @media (max-width: 768px) {
   .success-section {
-    text-align: center; 
+    text-align: center;
   }
 
   .success-section h2 {
@@ -551,12 +553,15 @@
   }
 
   .btn-custom {
-    font-size: 13px;
-    padding: 7px 16px;
+    font-size: 12px;
+    padding: 7px 15px;
   }
 
   .video-play i {
     font-size: 30px; 
+  }
+  .div-block{
+    display: block;
   }
 }
 
