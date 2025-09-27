@@ -430,7 +430,6 @@
 
 .success-section .sub-heading {
   font-size: 18px;
-  margin-bottom: 20px;
   color: #555;
 }
 
@@ -461,11 +460,11 @@
   color: #fff;
   border-radius: 50px;
   padding: 10px 25px;
-  font-size: 13px;
   font-weight: 600;
   display: inline-flex;
   align-items: center;
   transition: all 0.3s ease;
+  font-size: 16px;
 }
 
 .btn-custom:hover {
@@ -491,6 +490,74 @@
 .video-play i {
   font-size: 40px;
   color: #d6336c;
+}
+
+/* ==================== RESPONSIVE ==================== */
+
+/* Tablets (≤1024px) */
+@media (max-width: 1024px) {
+  .success-section {
+    padding: 40px 0;
+  }
+
+  .success-section .sub-heading {
+    font-size: 16px;
+  }
+
+  .btn-custom {
+    font-size: 15px;
+    padding: 8px 20px;
+  }
+}
+
+/* Mobiles (≤768px) */
+@media (max-width: 768px) {
+  .success-section {
+    text-align: center; 
+  }
+
+  .success-section h2 {
+    font-size: 22px;
+  }
+
+  .success-section .sub-heading {
+    font-size: 15px;
+    margin-bottom: 15px;
+  }
+
+  .success-section ul li {
+    font-size: 14px;
+    padding-left: 22px;
+  }
+
+  .btn-custom {
+    font-size: 14px;
+    padding: 8px 18px;
+  }
+
+  .video-box {
+    margin-top: 20px;
+  }
+}
+
+/* Small Mobiles (≤480px) */
+@media (max-width: 480px) {
+  .success-section h2 {
+    font-size: 20px;
+  }
+
+  .success-section .sub-heading {
+    font-size: 14px;
+  }
+
+  .btn-custom {
+    font-size: 13px;
+    padding: 7px 16px;
+  }
+
+  .video-play i {
+    font-size: 30px; 
+  }
 }
 
 /* ---------------------- Upsida Facilities ---------------------  */

@@ -792,7 +792,7 @@
 /* Mobiles (≤768px) */
 @media (max-width: 768px) {
   .success-section {
-    text-align: center; /* center align text & button */
+    text-align: center; 
   }
 
   .success-section h2 {
@@ -815,7 +815,7 @@
   }
 
   .video-box {
-    margin-top: 20px; /* gap from text */
+    margin-top: 20px;
   }
 }
 
@@ -835,6 +835,6 @@
   }
 
   .video-play i {
-    font-size: 30px; /* play icon small */
+    font-size: 30px; 
   }
 }
