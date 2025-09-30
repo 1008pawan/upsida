@@ -530,7 +530,7 @@
   }
 }
 
-/* ================ News alert ====================== */
+/* ================ News Section ====================== */
 .news-section {
   padding: 40px 0;
   margin: 0px 50px;
@@ -754,16 +754,35 @@
 .btn-custom i {
   margin-left: 8px;
 }
-
-.video-box {
+.success-btn {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  background-color: #fff;
   position: relative;
-  border-radius: 15px;
+  left: -110px;
+  padding: 10px 10px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  z-index: 1;
+}
+.video-box {
+  width: 450px;
+  height: 360px;
+  position: relative;
   overflow: hidden;
+  top: 20px;
+  left: -120px;
+  z-index: 2;
 }
 
 .video-box video {
+  background-color: black;
   width: 100%;
-  border-radius: 15px;
+  height: 360px;
+  position: relative;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
 }
 
 .video-play i {
@@ -787,12 +806,27 @@
     font-size: 15px;
     padding: 8px 20px;
   }
+  .video-box video {
+    background-color: black;
+    width: 100%;
+    position: relative;
+    border-radius: 10px;
+  }
+  .video-box {
+    width: 450px;
+    height: 360px;
+    position: relative;
+    overflow: hidden;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+  }
 }
 
 /* Mobiles (≤768px) */
 @media (max-width: 768px) {
   .success-section {
-    text-align: center; 
+    text-align: center;
   }
 
   .success-section h2 {
@@ -814,8 +848,24 @@
     padding: 8px 18px;
   }
 
+  .success-btn {
+    justify-content: center;
+    border-radius: 50px;
+    max-width: 100%;
+  }
   .video-box {
-    margin-top: 20px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+  }
+  .video-box video {
+    background-color: black;
+    width: 100%;
+    position: relative;
+    border-radius: 10px;
   }
 }
 
@@ -835,6 +885,18 @@
   }
 
   .video-play i {
-    font-size: 30px; 
+    font-size: 30px;
+  }
+  .video-box {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+  }
+  .video-box video {
+    background-color: black;
+    width: 100%;
+    position: relative;
+    border-radius: 10px;
   }
 }
