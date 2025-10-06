@@ -288,6 +288,10 @@ footer {
   .subscribe-box {
     flex-direction: column;
   }
+  .btn-custom {
+    font-size: 10px;
+    padding: 4px 7px;
+  }
 
   .subscribe-box input {
     border-radius: 20px;
@@ -298,6 +302,9 @@ footer {
     border-radius: 20px;
     width: 100%;
     justify-content: center;
+  }
+  .feedback-btn {
+    width: 100%;
   }
 }
 

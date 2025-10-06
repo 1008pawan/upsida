@@ -93,8 +93,7 @@
         <h1 class="display-4 fw-bold hero-title">UPSIDA</h1>
         <h4 class="mb-4 hero-subtitle">
           <span class="subtitle"
-            >Uttar Pradesh State Industrial Development
-            Authority</span
+            >Uttar Pradesh State Industrial Development Authority</span
           >
         </h4>
 
@@ -146,8 +145,8 @@
     </section>
 
     <!-- Investible Sectors -->
-    <section>
-      <div class="container my-5">
+    <section class="my-5">
+      <div class="container position-relative">
         <div class="d-flex justify-content-between align-items-center mb-3">
           <h2 class="section-title">Investible Sectors</h2>
           <a href="#" class="btn btn-outline-primary rounded-pill"
@@ -155,209 +154,115 @@
           >
         </div>
 
-        <!-- Carousel -->
-        <div id="sectorCarousel" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <!-- Slide 1 (3 cards) -->
-            <div class="carousel-item active">
-              <div class="row">
-                <div class="col-md-4">
-                  <div class="card">
-                    <div
-                      class="card-bg"
-                      style="
-                        background-image: url('/assets/images/home/cg.png');
-                      "
-                    >
-                      <h5 class="Investible-title">Info Graphic</h5>
-                      <div class="card-overlay">
-                        <h1 class="text-card-overlay">Info Graphic</h1>
-                        <p class="para-card-overlay">
-                          India's Capital Goods sector is experiencing
-                          significant attention due to its critical role in
-                          driving industrial growth and economic development.
-                          This sector encompasses industries such as electrical
-                          equipment, machinery, and construction, which are
-                          essential for the country's infrastructure
-                          development. According to the Indian Electrical and
-                          Electronics Manufacturers’ Association (IEEMA), the
-                          electrical equipment industry. The industry saw
-                          consistent double-digit growth in power equipment and
-                          transformers.
-                        </p>
-                        <a href="#" class="btn-know-more">Know more</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="card">
-                    <div
-                      class="card-bg"
-                      style="
-                        background-image: url('/assets/images/home/em_0.png');
-                      "
-                    >
-                      <h5 class="Investible-title">Info Graphic 2</h5>
-                      <div class="card-overlay">
-                        <h1 class="text-card-overlay">Info Graphic 2</h1>
-                        <p class="para-card-overlay">
-                          Reflecting on India's commitment to address
-                          environmental concerns, reduce emission intensity of
-                          its gross domestic product (GHG emissions per unit
-                          GDP) by 33%–35% over 2005 levels by 2030, and embrace
-                          sustainable transportation solutions, electric
-                          mobility is emerging as one of the cardinal segments
-                          in the automobile industry in India. It is estimated
-                          that <strong>E-Two Wheelers</strong> will reach a
-                          market of <strong>5 Mn by 2025</strong>
-                        </p>
-                        <a href="#" class="btn-know-more">Know more</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="card">
-                    <div
-                      class="card-bg"
-                      style="
-                        background-image: url('/assets/images/home/ecm.png');
-                      "
-                    >
-                      <h5 class="Investible-title">Info Graphic 3</h5>
-                      <div class="card-overlay">
-                        <h1 class="text-card-overlay">Info Graphic 3</h1>
-                        <p class="para-card-overlay">
-                          The Electronic Components Manufacturing sector in
-                          India is gaining significant momentum, marked by
-                          robust government support and strategic initiatives
-                          electronics hub. The Production Linked Incentive
-                          schemes have played a pivotal role, boosting
-                          production and attracting substantial investments from
-                          major global players such as Apple and Samsung. The
-                          Ministry of Electronics and Information Technology
-                          (MeitY) has spearheaded several key initiatives,
-                          including the Scheme for Promotion of Manufacturing.
-                        </p>
-                        <a href="#" class="btn-know-more">Know more</a>
-                      </div>
-                    </div>
-                  </div>
+        <!-- Carousel Wrapper -->
+        <div class="overflow-hidden">
+          <div class="d-flex transition-all" id="cardTrack">
+            <!-- Repeat 6 cards -->
+            <div class="card flex-shrink-0 mx-2" style="width: 32%">
+              <div
+                class="card-bg"
+                style="background-image: url('/assets/images/home/cg.png')"
+              >
+                <h5 class="Investible-title">Info Graphic 1</h5>
+                <div class="card-overlay">
+                  <h1>Info Graphic 1</h1>
+                  <p>India’s Capital Goods sector is rapidly growing...</p>
+                  <a href="#" class="btn-know-more">Know more</a>
                 </div>
               </div>
             </div>
 
-            <!-- Slide 2 (3 more cards) -->
-            <div class="carousel-item">
-              <div class="row">
-                <div class="col-md-4">
-                  <div class="card">
-                    <div
-                      class="card-bg"
-                      style="
-                        background-image: url('/assets/images/home/fp.png');
-                      "
-                    >
-                      <h5 class="Investible-title">Info Graphic 4</h5>
-                      <div class="card-overlay">
-                        <h1 class="text-card-overlay">Info Graphic 4</h1>
-                        <p class="para-card-overlay">
-                          The Electronic Components Manufacturing sector in
-                          India is gaining significant momentum, marked by
-                          robust government support and strategic initiatives
-                          aimed at transforming the country into a global
-                          electronics hub. The Production Linked Incentive
-                          schemes have played a pivotal role, boosting
-                          production major global players such as Apple and
-                          Samsung. The Ministry of Electronics and Information
-                          Technology (MeitY) has spearheaded several key
-                          initiatives, including the Scheme for Promotion of
-                          Manufacturing.
-                        </p>
-                        <a href="#" class="btn-know-more">Know more</a>
-                      </div>
-                    </div>
-                  </div>
+            <div class="card flex-shrink-0 mx-2" style="width: 32%">
+              <div
+                class="card-bg"
+                style="background-image: url('/assets/images/home/em_0.png')"
+              >
+                <h5 class="Investible-title">Info Graphic 2</h5>
+                <div class="card-overlay">
+                  <h1>Info Graphic 2</h1>
+                  <p>Electric mobility is transforming India’s transport...</p>
+                  <a href="#" class="btn-know-more">Know more</a>
                 </div>
-                <div class="col-md-4">
-                  <div class="card">
-                    <div
-                      class="card-bg"
-                      style="
-                        background-image: url('/assets/images/home/image_33.png');
-                      "
-                    >
-                      <h5 class="Investible-title">Info Graphic 5</h5>
-                      <div class="card-overlay">
-                        <h1 class="text-card-overlay">Info Graphic 5</h1>
-                        <p class="para-card-overlay">
-                          The Electronic Components Manufacturing sector in
-                          India is gaining significant momentum, marked by
-                          robust government support and strategic initiatives
-                          aimed at transforming the country into a global
-                          electronics hub. The Production Linked Incentive
-                          schemes have played a pivotal role, boosting
-                          production and attracting substantial investments such
-                          as Apple and Samsung. The Ministry of Electronics
-                          (MeitY) has spearheaded several key initiatives,
-                          including the Scheme for Promotion of Manufacturing.
-                        </p>
-                        <a href="#" class="btn-know-more">Know more</a>
-                      </div>
-                    </div>
-                  </div>
+              </div>
+            </div>
+
+            <div class="card flex-shrink-0 mx-2" style="width: 32%">
+              <div
+                class="card-bg"
+                style="background-image: url('/assets/images/home/ecm.png')"
+              >
+                <h5 class="Investible-title">Info Graphic 3</h5>
+                <div class="card-overlay">
+                  <h1>Info Graphic 3</h1>
+                  <p>Electronics manufacturing is expanding fast...</p>
+                  <a href="#" class="btn-know-more">Know more</a>
                 </div>
-                <div class="col-md-4">
-                  <div class="card">
-                    <div
-                      class="card-bg"
-                      style="
-                        background-image: url('/assets/images/home/image-19_0.png');
-                      "
-                    >
-                      <h5 class="Investible-title">Info Graphic 6</h5>
-                      <div class="card-overlay">
-                        <h1 class="text-card-overlay">Info Graphic 6</h1>
-                        <p class="para-card-overlay">
-                          The Electronic Components Manufacturing sector in
-                          India is gaining significant momentum, marked by
-                          robust government support and strategic initiatives
-                          aimed at transforming the country into a global
-                          electronics hub. The Production Linked Incentive
-                          schemes have played a pivotal role, boosting
-                          production and attracting substantial investments from
-                          major global players such as Apple and Samsung. The
-                          Ministry of Electronics and Information Technology
-                          including the Scheme for Promotion of Manufacturing.
-                        </p>
-                        <a href="#" class="btn-know-more">Know more</a>
-                      </div>
-                    </div>
-                  </div>
+              </div>
+            </div>
+
+            <div class="card flex-shrink-0 mx-2" style="width: 32%">
+              <div
+                class="card-bg"
+                style="background-image: url('/assets/images/home/fp.png')"
+              >
+                <h5 class="Investible-title">Info Graphic 4</h5>
+                <div class="card-overlay">
+                  <h1>Info Graphic 4</h1>
+                  <p>Food processing sector shows high potential...</p>
+                  <a href="#" class="btn-know-more">Know more</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card flex-shrink-0 mx-2" style="width: 32%">
+              <div
+                class="card-bg"
+                style="
+                  background-image: url('/assets/images/home/image_33.png');
+                "
+              >
+                <h5 class="Investible-title">Info Graphic 5</h5>
+                <div class="card-overlay">
+                  <h1>Info Graphic 5</h1>
+                  <p>Investment in electronics infrastructure growing...</p>
+                  <a href="#" class="btn-know-more">Know more</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card flex-shrink-0 mx-2" style="width: 32%">
+              <div
+                class="card-bg"
+                style="
+                  background-image: url('/assets/images/home/image-19_0.png');
+                "
+              >
+                <h5 class="Investible-title">Info Graphic 6</h5>
+                <div class="card-overlay">
+                  <h1>Info Graphic 6</h1>
+                  <p>Tech manufacturing gaining major traction...</p>
+                  <a href="#" class="btn-know-more">Know more</a>
                 </div>
               </div>
             </div>
           </div>
-
-          <!-- Controls -->
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#sectorCarousel"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon"></span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#sectorCarousel"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon"></span>
-          </button>
         </div>
+
+        <!-- Buttons -->
+        <button
+          class="btn btn-primary position-absolute top-50 start-0 translate-middle-y"
+          id="prevBtn"
+          style="border-radius: 50%"
+        >
+          ‹
+        </button>
+        <button
+          class="btn btn-primary position-absolute top-50 end-0 translate-middle-y"
+          id="nextBtn"
+          style="border-radius: 50%"
+        >
+          ›
+        </button>
       </div>
     </section>
 
@@ -557,7 +462,6 @@
                 assistance, call at 0120-4401000
               </li>
             </ul>
-
           </div>
           <div class="success-btn">
             <a
@@ -659,7 +563,7 @@
               />
               UPSIDA
             </h5>
-            <p><i class="bi bi-telephone-fill"></i> +91-11-23048155</p>
+            <p><i class="bi bi-telephone-fill"></i> +0512-2582851</p>
             <p><i class="bi bi-envelope-fill"></i> contact@upsida.org.in</p>
             <div class="social-icons">
               <span>FOLLOW US</span><br />
@@ -726,5 +630,6 @@
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/multiplte.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
