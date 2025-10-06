@@ -21,64 +21,69 @@
   </head>
   <body>
     <!-- navbar -->
-    <header>
-      <div class="nav-container">
-        <div class="nav-respon">
-          <!-- Logo -->
-          <div class="logo">
-            <a href="/index.html">
-              <img src="assets/images/top-logo-1.png" alt="Logo 1" />
-              <img
-                src="assets/images/logo-3-upsida-removebg-preview.png"
-                alt="Logo 2"
-              />
-              <img
-                src="assets/images/logo-2-upsida-removebg-preview.png"
-                alt="Logo 3"
-              />
-            </a>
-          </div>
-
-          <!-- Mobile Menu Toggle -->
-          <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+    <header class="navbar" role="navigation" aria-label="Main navigation">
+      <div class="nav-inner">
+        <div class="logo">
+          <a href="/index.html">
+            <img src="assets/images/top-logo-1.png" alt="Logo 1" />
+            <img
+              src="assets/images/logo-3-upsida-removebg-preview.png"
+              alt="Logo 2"
+            />
+            <img
+              src="assets/images/logo-2-upsida-removebg-preview.png"
+              alt="Logo 3"
+            />
+          </a>
         </div>
 
-        <!-- Navigation -->
-        <nav>
-          <ul class="nav-menu">
-            <li class="nav-item mega-parent">
-              <a href="#">Online Services</a>
-              <div class="mega-menu">
-                <a href="/AboutUs.html">About Us</a>
-                <a href="#">Outstanding Dues</a>
-                <a href="#">Nivesh Mitra</a>
-              </div>
+        <!-- hamburger -->
+        <button
+          id="menuToggle"
+          class="menu-toggle"
+          aria-expanded="false"
+          aria-controls="mainNav"
+          aria-label="Toggle menu"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <!-- nav -->
+        <nav id="mainNav" aria-hidden="true">
+          <ul class="nav-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="/know-more.html">About</a></li>
+
+            <li class="has-submenu">
+              <a
+                href="#"
+                class="submenu-btn"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Services <span class="caret">▾</span></a
+              >
+              <ul class="submenu" aria-label="Services submenu">
+                <li><a href="#">News</a></li>
+                <li><a href="#">Tenders</a></li>
+                <li><a href="#">Press Release</a></li>
+              </ul>
             </li>
-            <li class="nav-item mega-parent">
-              <a href="#">Available Plots</a>
-              <div class="mega-menu">
-                <a href="#">Land Bank</a>
-                <a href="#">E-Auction</a>
-              </div>
+
+            <li class="has-submenu">
+              <a
+                href="#"
+                class="submenu-btn"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Online Services<span class="caret">▾</span></a
+              >
+              <ul class="submenu" aria-label="Projects submenu">
+                <li><a href="/AboutUs.html">About Us</a></li>
+                <li><a href="/Investor.html">Investor Feedback</a></li>
+              </ul>
             </li>
-            <li class="nav-item mega-parent">
-              <a href="#">Notices</a>
-              <div class="mega-menu">
-                <a href="#">News</a>
-                <a href="#">Tenders</a>
-                <a href="#">Press Release</a>
-              </div>
-            </li>
-            <li class="nav-item mega-parent">
-              <a href="/contuctUs.html">Contact Us</a>
-            </li>
-            <li class="nav-item mega-parent">
-              <a href="#">Investor Corner</a>
-              <div class="mega-menu">
-                <a href="/Investor.html">Investor Feedback</a>
-                <a href="#">Investor Intent</a>
-              </div>
-            </li>
+
+            <li><a href="/contuctUs.html">Contact Us</a></li>
           </ul>
         </nav>
       </div>
@@ -265,7 +270,7 @@
                   src="/assets/images/investor/big_cloud_climate_3.png"
                   alt="Climatic"
                 />
-                <strong>Climatic <br />Advantage</strong>
+                <strong>Climatic Advantage</strong>
               </div>
               <div class="card-text">
                 Uttar Pradesh has a total renewable energy capacity of 6,105.45
@@ -295,7 +300,7 @@
                   src="/assets/images/investor/big_globe_demography_3.png"
                   alt="Demographic"
                 />
-                <strong>Demographic <br />Advantage</strong>
+                <strong>Demographic Advantage</strong>
               </div>
               <div class="card-text">
                 Nearly 17% of India's population lives in Uttar Pradesh. The
@@ -323,7 +328,7 @@
                   src="/assets/images/investor/big_healtcare_38.png"
                   alt="Healthcare"
                 />
-                <strong>Healthcare <br />Facilities</strong>
+                <strong>Healthcare Facilities</strong>
               </div>
               <div class="card-text">
                 Under the Pradhan Mantri Ayushman Bharat Health Infrastructure
@@ -358,7 +363,7 @@
                   src="/assets/images/investor/big_education_4.png"
                   alt="Educational"
                 />
-                <strong>Educational <br />Facilities</strong>
+                <strong>Educational Facilities</strong>
               </div>
               <div class="card-text">
                 Uttar Pradesh's literacy rate, according to the 2011 Census, was
@@ -387,7 +392,7 @@
                   src="/assets/images/investor/big_virtual-reality-technology_4.png"
                   alt="Technology"
                 />
-                <strong>Technology & <br />Advancement</strong>
+                <strong>Technology & Advancement</strong>
               </div>
               <div class="card-text">
                 Uttar Pradesh currently has operational software technology
@@ -440,7 +445,7 @@
                   src="/assets/images/investor/big_sustainable-energy_36.png"
                   alt="Sustainability"
                 />
-                <strong>Sustainability <br />Initiatives</strong>
+                <strong>Sustainability Initiatives</strong>
               </div>
               <div class="card-text">
                 Uttar Pradesh has a total renewable energy capacity of 6,105.45

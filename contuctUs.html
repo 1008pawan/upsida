@@ -22,64 +22,69 @@
   </head>
   <body>
     <!-- navbar -->
-    <header>
-      <div class="nav-container">
-        <div class="nav-respon">
-          <!-- Logo -->
-          <div class="logo">
-            <a href="/index.html">
-              <img src="assets/images/top-logo-1.png" alt="Logo 1" />
-              <img
-                src="assets/images/logo-3-upsida-removebg-preview.png"
-                alt="Logo 2"
-              />
-              <img
-                src="assets/images/logo-2-upsida-removebg-preview.png"
-                alt="Logo 3"
-              />
-            </a>
-          </div>
-
-          <!-- Mobile Menu Toggle -->
-          <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+    <header class="navbar" role="navigation" aria-label="Main navigation">
+      <div class="nav-inner">
+        <div class="logo">
+          <a href="/index.html">
+            <img src="assets/images/top-logo-1.png" alt="Logo 1" />
+            <img
+              src="assets/images/logo-3-upsida-removebg-preview.png"
+              alt="Logo 2"
+            />
+            <img
+              src="assets/images/logo-2-upsida-removebg-preview.png"
+              alt="Logo 3"
+            />
+          </a>
         </div>
 
-        <!-- Navigation -->
-        <nav>
-          <ul class="nav-menu">
-            <li class="nav-item mega-parent">
-              <a href="#">Online Services</a>
-              <div class="mega-menu">
-                <a href="/AboutUs.html">About Us</a>
-                <a href="#">Outstanding Dues</a>
-                <a href="#">Nivesh Mitra</a>
-              </div>
+        <!-- hamburger -->
+        <button
+          id="menuToggle"
+          class="menu-toggle"
+          aria-expanded="false"
+          aria-controls="mainNav"
+          aria-label="Toggle menu"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <!-- nav -->
+        <nav id="mainNav" aria-hidden="true">
+          <ul class="nav-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="/know-more.html">About</a></li>
+
+            <li class="has-submenu">
+              <a
+                href="#"
+                class="submenu-btn"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Services <span class="caret">▾</span></a
+              >
+              <ul class="submenu" aria-label="Services submenu">
+                <li><a href="#">News</a></li>
+                <li><a href="#">Tenders</a></li>
+                <li><a href="#">Press Release</a></li>
+              </ul>
             </li>
-            <li class="nav-item mega-parent">
-              <a href="#">Available Plots</a>
-              <div class="mega-menu">
-                <a href="#">Land Bank</a>
-                <a href="#">E-Auction</a>
-              </div>
+
+            <li class="has-submenu">
+              <a
+                href="#"
+                class="submenu-btn"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Online Services<span class="caret">▾</span></a
+              >
+              <ul class="submenu" aria-label="Projects submenu">
+                <li><a href="/AboutUs.html">About Us</a></li>
+                <li><a href="/Investor.html">Investor Feedback</a></li>
+              </ul>
             </li>
-            <li class="nav-item mega-parent">
-              <a href="#">Notices</a>
-              <div class="mega-menu">
-                <a href="#">News</a>
-                <a href="#">Tenders</a>
-                <a href="#">Press Release</a>
-              </div>
-            </li>
-            <li class="nav-item mega-parent">
-              <a href="/contuctUs.html">Contact Us</a>
-            </li>
-            <li class="nav-item mega-parent">
-              <a href="#">Investor Corner</a>
-              <div class="mega-menu">
-                <a href="/Investor.html">Investor Feedback</a>
-                <a href="#">Investor Intent</a>
-              </div>
-            </li>
+
+            <li><a href="/contuctUs.html">Contact Us</a></li>
           </ul>
         </nav>
       </div>
@@ -189,7 +194,10 @@
                   UPSIDA Complex, A-1/4 Lakhanpur,<br />
                   Kanpur-208024
                 </p>
-                <p><i class="bi bi-telephone-fill"></i> +0512-2582851, 2582852, 2582853</p>
+                <p>
+                  <i class="bi bi-telephone-fill"></i> +0512-2582851, 2582852,
+                  2582853
+                </p>
                 <p><i class="bi bi-envelope-fill"></i> ceo@upsida.co.in</p>
                 <div class="map-embed mt-3">
                   <iframe

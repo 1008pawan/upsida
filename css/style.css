@@ -262,6 +262,7 @@
   font-size: 15px;
 }
 .card {
+  flex: 0 0 32%;
   background-color: #d0d1d1;
   border-radius: 20px;
   box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
@@ -269,6 +270,11 @@
   opacity: 0;
   transform: translateY(40px);
   animation: fadeUp 1s ease forwards;
+}
+#cardTrack {
+  display: flex;
+  gap: 16px;
+  transition: transform 0.5s ease;
 }
 .card-bg::before {
   content: "";
@@ -464,7 +470,6 @@
     right: -40px;
   }
 }
-
 @media (max-width: 768px) {
   #cardTrack .card {
     width: 100% !important;
@@ -474,7 +479,8 @@
   }
   .card {
     margin: 10px auto;
-    width: 90%;
+    width: 100%;
+    flex: 0 0 100%;
   }
 
   .card-bg {
@@ -717,15 +723,12 @@
 }
 
 @media (max-width: 392px) {
-  
   .profile-list {
     justify-content: center;
     padding: 0px 20px;
   }
-  
+
   .profile-item {
     width: 100px;
   }
 }
-
-

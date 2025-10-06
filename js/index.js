@@ -9,14 +9,20 @@ function updateCarousel() {
   const screenWidth = window.innerWidth;
   let visibleCards = 3;
   if (screenWidth < 768) visibleCards = 1;
-  const cardWidth = cards[0].offsetWidth + 16;
-  const maxIndex = cards.length - visibleCards;
 
+  // calculate card width including margin
+  const cardStyle = getComputedStyle(cards[0]);
+  const cardMarginRight = parseInt(cardStyle.marginRight) || 0;
+  const cardWidth = cards[0].offsetWidth + cardMarginRight;
+
+  const maxIndex = cards.length - visibleCards;
+  
   // Infinite loop behavior
   if (index < 0) index = maxIndex;
   if (index > maxIndex) index = 0;
 
   track.style.transform = `translateX(-${index * cardWidth}px)`;
+  track.style.transition = "transform 0.5s ease";
 }
 
 nextBtn.addEventListener("click", () => {
@@ -30,4 +36,6 @@ prevBtn.addEventListener("click", () => {
 });
 
 window.addEventListener("resize", updateCarousel);
+
+// Initialize
 updateCarousel();

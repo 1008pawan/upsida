@@ -141,9 +141,16 @@ ul {
 
 @media (max-width: 576px) {
   .about-title {
-    font-size: 4rem;
+    font-size: 2.5rem;
     position: relative;
     top: 40px;
+  }
+  .about-image-wrapper{
+    display: none;
+  }
+  .about-title{
+    padding-top: 40px;
+    padding-bottom: 150px;
   }
 }
 
@@ -273,7 +280,7 @@ ul {
 /* Mobile devices */
 @media (max-width: 576px) {
   .highlight-banner {
-    font-size: 0.85rem;
+    font-size: 0.65rem;
     padding: 6px 10px;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
@@ -283,7 +290,7 @@ ul {
   }
 
   .para {
-    font-size: 0.85rem;
+    font-size: 0.55rem;
     line-height: 1.4;
   }
 
@@ -311,10 +318,22 @@ ul {
     flex-direction: column;
     gap: 10px;
   }
+  #initiative-text{
+    font-size: 0.55rem;
+  }
+  .text-start{
+    font-size: 0.85rem;
+  }
 }
+
+
 
 /* ================= testimonial-section ==================== */
 .testimonial-section {
+  background: #5d7c8c;
+  padding: 60px 0;
+}
+.testimonial-section-mobile {
   background: #5d7c8c;
   padding: 60px 0;
 }
@@ -363,6 +382,22 @@ ul {
 .carousel-indicators {
   bottom: -60px;
 }
+.testimonial-section-mobile{
+  display: none;
+}
+@media (max-width: 768px) {
+  .testimonial-card {
+    min-height: auto;
+    padding: 30px 20px;
+  }
+  .testimonial-section{
+    display: none;
+  }
+  .testimonial-section-mobile{
+  display: block;
+}
+}
+
 
 /* ============== Meet Our Team ================== */
 .section-title {
