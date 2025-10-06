@@ -780,6 +780,7 @@ footer {
   .video-box video {
     background-color: black;
     width: 100%;
+    height: 100%;
     position: relative;
     border-radius: 10px;
   }
