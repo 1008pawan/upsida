@@ -644,7 +644,6 @@ footer {
 }
 
 /*--------------------- success section ------------------------ */
-
 .success-section {
   background: #eaf5fc;
   padding: 60px 0;
@@ -706,22 +705,25 @@ footer {
 .btn-custom i {
   margin-left: 8px;
 }
+
 .success-btn {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
+  width: 75%;
   background-color: #fff;
-  position: relative;
-  left: -110px;
-  padding: 10px 10px;
-  border-top-right-radius: 50px;
+  padding: 12px 20px;
   border-bottom-right-radius: 50px;
-  z-index: 1;
+  border-top-right-radius: 50px;
+  margin-top: 25px;
+  gap: 10px;
 }
+
 .video-box {
-  top: 45px;
-  width: 450px;
-  height: 400px;
+  position: relative;
+  top: 40px;
+  width: 100%;
+  height: 300px;
   position: relative;
   overflow: hidden;
   z-index: 2;
@@ -729,8 +731,8 @@ footer {
 
 .video-box img {
   width: 100%;
-  height: 90%;
-  position: relative;
+  height: 300px;
+  display: block;
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
 }
@@ -740,6 +742,7 @@ footer {
   color: #d6336c;
 }
 
+/* ✅ Custom play button animation */
 .custom-play-button {
   position: absolute;
   top: 50%;
@@ -757,6 +760,7 @@ footer {
   transition: transform 0.3s ease, background 0.3s ease;
   animation: pulseGlow 2s infinite;
 }
+
 .custom-play-button img {
   width: 50px;
   height: 50px;
@@ -777,9 +781,9 @@ footer {
   }
 }
 
-/* Popup Modal CSS */
+/* ✅ Popup Modal */
 .video-modal {
-  display: none; /* Hidden by default */
+  display: none;
   position: fixed;
   z-index: 999;
   left: 0;
@@ -814,6 +818,12 @@ footer {
   cursor: pointer;
 }
 
+/* ✅ Remove extra spacing in grid */
+.success-section .row {
+  margin: 0;
+  align-items: center;
+}
+
 /* ==================== RESPONSIVE ==================== */
 
 /* Tablets (≤1024px) */
@@ -830,20 +840,9 @@ footer {
     font-size: 15px;
     padding: 8px 20px;
   }
-  .video-box video {
-    /* background-color: black; */
-    width: 100%;
-    position: relative;
-    border-radius: 10px;
-  }
+
   .video-box {
-    width: 450px;
-    height: 360px;
-    position: relative;
-    overflow: hidden;
-    top: 0px;
-    left: 0px;
-    z-index: 2;
+    height: auto;
   }
 }
 
@@ -868,35 +867,30 @@ footer {
   }
 
   .btn-custom {
-    font-size: 14px;
-    padding: 8px 18px;
+    font-size: 8px;
+    padding: 2px 2px;
   }
 
   .success-btn {
-    justify-content: end;
-    border-radius: 50px;
-    max-width: 100%;
+    justify-content: center;
+    flex-wrap: nowrap;
+    /* margin-top: 20px; */
+  }
+
+  .video-box {
+    margin-bottom: 20px;
+  }
+
+  .video-modal-content {
+    margin: 20% auto;
   }
   .video-box {
-    width: 100%;
     position: relative;
-    overflow: hidden;
     top: 0px;
-    left: 0px;
-    z-index: 2;
   }
-  .video-box video {
-    background-color: black;
-    width: 100%;
-    position: relative;
-    border-radius: 10px;
-  }
-  .video-modal-content {
-    position: relative;
-    margin: 20% auto;
-    max-width: 900px;
-    width: 90%;
-    background: transparent;
+  .success-btn {
+    padding: 0px 0px;
+    gap: 0px;
   }
 }
 
@@ -911,37 +905,20 @@ footer {
   }
 
   .btn-custom {
-    font-size: 10px;
-    padding: 3px 7px;
-  }
-  .btn-link {
-    font-size: 10px;
+    font-size: 8px;
+    padding: 2px 2px;
   }
 
   .video-play i {
     font-size: 30px;
   }
+
   .video-box {
     width: 100%;
-    height: 100%;
-    position: relative;
-    z-index: 2;
+    height: auto;
   }
-  .video-box video {
-    /* background-color: black; */
-    width: 100%;
-    height: 100%;
-    position: relative;
-    border-radius: 10px;
-  }
-  .text-flex .stat {
-    padding: 0px;
-    word-break: break-word;
-    flex: 1;
-    font-size: 10px;
-  }
-  .wrapper img {
-    height: 100%;
-    width: 100%;
+
+  .video-box img {
+    border-radius: 5px;
   }
 }
