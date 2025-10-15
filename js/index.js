@@ -40,11 +40,6 @@ window.addEventListener("resize", updateCarousel);
 // Initialize
 updateCarousel();
 
-
-
-
-
-
 // for video iframe
 
 // JavaScript to handle popup
@@ -54,7 +49,8 @@ const videoModal = document.getElementById("videoModal");
 const videoIframe = document.getElementById("videoIframe");
 
 openBtn.addEventListener("click", function () {
-  videoIframe.src = "https://www.youtube.com/embed/qKfqKNPnR8M?autoplay=1";
+  videoIframe.src =
+    "https://www.youtube.com/embed/8N5D1m4Nq2c?si=T8SFdt1_7TV9sZuJ";
   videoModal.style.display = "block";
 });
 

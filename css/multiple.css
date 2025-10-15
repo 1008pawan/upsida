@@ -742,7 +742,6 @@ footer {
   color: #d6336c;
 }
 
-/* ✅ Custom play button animation */
 .custom-play-button {
   position: absolute;
   top: 50%;
@@ -781,7 +780,6 @@ footer {
   }
 }
 
-/* ✅ Popup Modal */
 .video-modal {
   display: none;
   position: fixed;
@@ -818,7 +816,6 @@ footer {
   cursor: pointer;
 }
 
-/* ✅ Remove extra spacing in grid */
 .success-section .row {
   margin: 0;
   align-items: center;
