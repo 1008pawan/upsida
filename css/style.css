@@ -273,7 +273,7 @@
 }
 #cardTrack {
   display: flex;
-  gap: 16px;
+  gap: 10px;
   transition: transform 0.5s ease;
 }
 .card-bg::before {
