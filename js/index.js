@@ -16,7 +16,7 @@ function updateCarousel() {
   const cardWidth = cards[0].offsetWidth + cardMarginRight;
 
   const maxIndex = cards.length - visibleCards;
-  
+
   // Infinite loop behavior
   if (index < 0) index = maxIndex;
   if (index > maxIndex) index = 0;
@@ -39,3 +39,33 @@ window.addEventListener("resize", updateCarousel);
 
 // Initialize
 updateCarousel();
+
+
+
+
+
+
+// for video iframe
+
+// JavaScript to handle popup
+const openBtn = document.getElementById("openVideoPopup");
+const closeBtn = document.getElementById("closeVideoPopup");
+const videoModal = document.getElementById("videoModal");
+const videoIframe = document.getElementById("videoIframe");
+
+openBtn.addEventListener("click", function () {
+  videoIframe.src = "https://www.youtube.com/embed/qKfqKNPnR8M?autoplay=1";
+  videoModal.style.display = "block";
+});
+
+closeBtn.addEventListener("click", function () {
+  videoIframe.src = ""; // Stop the video
+  videoModal.style.display = "none";
+});
+
+window.addEventListener("click", function (e) {
+  if (e.target == videoModal) {
+    videoIframe.src = "";
+    videoModal.style.display = "none";
+  }
+});

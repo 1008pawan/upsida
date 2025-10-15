@@ -719,19 +719,17 @@ footer {
   z-index: 1;
 }
 .video-box {
+  top: 45px;
   width: 450px;
-  height: 360px;
+  height: 400px;
   position: relative;
   overflow: hidden;
-  top: 20px;
-  left: -120px;
   z-index: 2;
 }
 
-.video-box video {
-  background-color: black;
+.video-box img {
   width: 100%;
-  height: 360px;
+  height: 90%;
   position: relative;
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
@@ -740,6 +738,80 @@ footer {
 .video-play i {
   font-size: 40px;
   color: #d6336c;
+}
+
+.custom-play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+  animation: pulseGlow 2s infinite;
+}
+.custom-play-button img {
+  width: 50px;
+  height: 50px;
+}
+
+@keyframes pulseGlow {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    box-shadow: 0 0 0 rgba(255, 99, 100, 0.5);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.1);
+    box-shadow: 0 0 20px rgba(255, 99, 100, 0.7);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    box-shadow: 0 0 0 rgba(255, 99, 100, 0.5);
+  }
+}
+
+/* Popup Modal CSS */
+.video-modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.video-modal-content {
+  position: relative;
+  margin: 8% auto;
+  max-width: 900px;
+  width: 90%;
+  background: transparent;
+}
+
+.video-modal iframe {
+  width: 100%;
+  height: 450px;
+  border-radius: 10px;
+}
+
+.close-btn {
+  position: absolute;
+  top: -25px;
+  right: 0;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 /* ==================== RESPONSIVE ==================== */
@@ -759,7 +831,7 @@ footer {
     padding: 8px 20px;
   }
   .video-box video {
-    background-color: black;
+    /* background-color: black; */
     width: 100%;
     position: relative;
     border-radius: 10px;
@@ -801,7 +873,7 @@ footer {
   }
 
   .success-btn {
-    justify-content: center;
+    justify-content: end;
     border-radius: 50px;
     max-width: 100%;
   }
@@ -818,6 +890,13 @@ footer {
     width: 100%;
     position: relative;
     border-radius: 10px;
+  }
+  .video-modal-content {
+    position: relative;
+    margin: 20% auto;
+    max-width: 900px;
+    width: 90%;
+    background: transparent;
   }
 }
 
@@ -849,14 +928,11 @@ footer {
     z-index: 2;
   }
   .video-box video {
-    background-color: black;
+    /* background-color: black; */
     width: 100%;
     height: 100%;
     position: relative;
     border-radius: 10px;
-  }
-  .success-btn {
-    margin-left: 100px;
   }
   .text-flex .stat {
     padding: 0px;

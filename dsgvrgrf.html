@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Success Stories UPSIDA</title>
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <!-- Bootstrap Icons -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    rel="stylesheet"
+  />
+  <!-- Magnific Popup CSS -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
+  />
+
+  <style>
+    .success-section {
+      background: #eaf5fc;
+      padding: 60px 0;
+    }
+    .success-section h2 {
+      font-weight: 700;
+      color: #1d3b70;
+    }
+    .success-section h2 span {
+      color: #1d77d4;
+    }
+    .success-section .sub-heading {
+      font-size: 18px;
+      color: #555;
+      margin-bottom: 20px;
+    }
+    .success-section ul {
+      list-style: none;
+      padding: 0;
+    }
+    .success-section ul li {
+      margin-bottom: 10px;
+      position: relative;
+      padding-left: 28px;
+      font-size: 16px;
+      color: #333;
+    }
+    .success-section ul li::before {
+      content: "●";
+      color: #1d77d4;
+      font-weight: bold;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    .btn-custom {
+      background: #1d77d4;
+      color: #fff;
+      border-radius: 50px;
+      padding: 10px 25px;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      transition: all 0.3s ease;
+      font-size: 16px;
+    }
+    .btn-custom:hover {
+      background: #155a9a;
+      color: #fff;
+    }
+    .btn-custom i {
+      margin-left: 8px;
+    }
+
+    .success-btn {
+      display: flex;
+      gap: 15px;
+      justify-content: flex-start;
+      margin-top: 20px;
+      flex-wrap: wrap;
+    }
+
+    /* Video Box */
+    .video-box {
+      width: 100%;
+      max-width: 450px;
+      height: 400px;
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+      cursor: pointer;
+    }
+    .video-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    /* Custom Play Button */
+    .custom-play-button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100px;
+      height: 100px;
+      background: rgba(255, 255, 255, 0.8);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 2;
+      transition: transform 0.3s ease, background 0.3s ease;
+      animation: pulseGlow 2s infinite;
+    }
+    .custom-play-button img {
+      width: 50px;
+      height: 50px;
+    }
+    .custom-play-button:hover {
+      background: rgba(255, 255, 255, 0.95);
+      transform: translate(-50%, -50%) scale(1.2);
+    }
+
+    @keyframes pulseGlow {
+      0% { transform: translate(-50%, -50%) scale(1); box-shadow: 0 0 0 rgba(255,99,100,0.5);}
+      50% { transform: translate(-50%, -50%) scale(1.1); box-shadow: 0 0 20px rgba(255,99,100,0.7);}
+      100% { transform: translate(-50%, -50%) scale(1); box-shadow: 0 0 0 rgba(255,99,100,0.5);}
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .success-section {
+        text-align: center;
+      }
+      .success-section h2 { font-size: 22px; }
+      .success-section .sub-heading { font-size: 15px; }
+      .success-section ul li { font-size: 14px; padding-left: 22px; }
+      .btn-custom { font-size: 14px; padding: 8px 18px; }
+      .success-btn { justify-content: center; }
+      .video-box { margin: 0 auto; height: 300px; }
+    }
+  </style>
+</head>
+<body>
+  <section class="success-section">
+    <div class="container">
+      <div class="row">
+        <!-- Video Left -->
+        <div class="col-md-4 video-box popup-youtube" href="https://www.youtube.com/embed/qKfqKNPnR8M?si=Ggez6xHdpYCxfh20">
+          <img src="/assets/videos/video-Image.png" alt="video-Image" />
+          <div class="custom-play-button">
+            <img src="/assets/videos/play_button_icon.svg" alt="Play" />
+          </div>
+        </div>
+
+        <!-- Content Right -->
+        <div class="col-md-8" style="padding: 10px">
+          <h2>Featured <span>Success Stories UPSIDA</span></h2>
+          <p class="sub-heading">
+            The Uttar Pradesh State Industrial Development Authority (UPSIDA)
+            is the central organization charged with the growth of industry
+            and infrastructure.
+          </p>
+
+          <h5 class="fw-bold text-primary">About</h5>
+          <ul>
+            <li>
+              It has been a pioneer for industrial promotion in the state for
+              many years and has been critical in maintaining the state's
+              numero uno position among other states.
+            </li>
+            <li>
+              UPSIDA has developed 155 industrial areas in Uttar Pradesh on a
+              total of 20,000 Acres Land bank.
+            </li>
+            <li>
+              UPSIDA's initiative - Citizen Facilitation Center, designed to
+              maximize support for investors and entrepreneurs, is elevating
+              the customer experience across the state. For customer assistance, call at 0120-4401000
+            </li>
+          </ul>
+
+          <div class="success-btn">
+            <a href="#" class="btn btn-link text-decoration-none fw-semibold text-primary">
+              Become the next success story
+            </a>
+            <a href="/contuctUs.html" class="btn btn-custom">
+              CONTACT US NOW <i class="bi bi-arrow-right-circle"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- jQuery + Magnific Popup -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".popup-youtube").magnificPopup({
+        type: "iframe",
+        mainClass: "mfp-fade",
+        preloader: true,
+      });
+    });
+  </script>
+</body>
+</html>
