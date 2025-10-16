@@ -6,6 +6,8 @@
 .hero-nav {
   display: flex;
   font-size: small;
+  font-weight: 700;
+  font-size: 15px;
   gap: 8px;
 }
 .contact-text {
@@ -20,11 +22,12 @@
 }
 .contact-home:hover {
   text-decoration: underline;
+  color: blue;
 }
 @media (max-width: 576px) {
   .contact-text {
-  font-size: 2em;
-}
+    font-size: 2em;
+  }
 }
 /* ================ contact-Query-form ================== */
 .form-container,
@@ -104,7 +107,10 @@
   border: none;
 }
 @media (max-width: 576px) {
-.section-title {
-  font-size: 1.8em;
-}
+  .section-title {
+    font-size: 1.8em;
+  }
+  .submit-btn {
+    padding: 5px 15px;
+  }
 }
